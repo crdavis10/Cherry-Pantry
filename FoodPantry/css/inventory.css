@@ -12,21 +12,14 @@ a{
     color:#a41e35 ;
 }
 
-h3{
-    font-size:35px;
-    color:#a41e35;
-}
-
 h4 {
     font-size: 12px;
     color: #a41e35;
     text-align: center;
     width:-webkit-fill-available;
+
 }
 
-h5{
-    color:#a41e35;
-}
 /*                                view inventroy                                   */
 .invImg{
     max-width:100px;

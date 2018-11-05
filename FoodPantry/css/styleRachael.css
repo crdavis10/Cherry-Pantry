@@ -48,3 +48,23 @@
 .header-container {
     margin-bottom: 20px;
 }
+
+.control-label{
+    margin-top:40px;
+
+}
+
+.btnShoppingEdit{
+    margin:5px 0;
+    /*width: 86px;*/
+}
+
+.btnShoppingDel {
+    margin: 5px 0;
+    width: 86px;
+}
+.btn-secondary {
+    color: #6c757d !important;
+    background-color: #ffffff !important;
+    border-color: #ced4da !important;
+}
