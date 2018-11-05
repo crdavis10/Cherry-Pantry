@@ -68,11 +68,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AddItem.aspx" />
+    <Content Include="css\main.css" />
     <Content Include="css\receipt.css" />
     <Content Include="css\style.css" />
     <Content Include="css\styleRachael.css" />
     <Content Include="Donor.aspx" />
     <Content Include="Export.aspx" />
+    <Content Include="images\cherrypantrycherry.png" />
     <Content Include="Login.aspx" />
     <Content Include="packages.config" />
     <Content Include="FoodPantry.Master" />

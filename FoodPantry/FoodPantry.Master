@@ -9,6 +9,7 @@
     </asp:ContentPlaceHolder>
 </head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/inventory.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
@@ -17,6 +18,40 @@
 
 <body>
     <form id="form1" runat="server">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="#">
+              Cherry Pantry
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="Inventory.aspx">Inventory</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Checkout</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Export.aspx">Export</a>
+              </li>
+                <li class="nav-item">
+                <a class="nav-link" href="Roles.aspx">Roles</a>
+              </li>
+                <li class="nav-item">
+                <a class="nav-link" href="Donor.aspx">Donor</a>
+              </li>
+                <li class="nav-item">
+                <a class="nav-link" href="Receipt.aspx">Receipts</a>
+              </li>
+            </ul>
+            <span class="navbar-text">
+              <a class="nav-link" href="Login.aspx">Log in</a>
+            </span>
+          </div>
+        </nav>
+
     <div>
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         

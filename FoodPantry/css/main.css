@@ -1,0 +1,14 @@
+﻿body {
+}
+
+.navbar{
+    background-color:#a41e35;
+}
+
+.navbar-brand{
+    color:white !important;
+}
+
+.nav-link{
+    color:white !important;
+}
