@@ -1,0 +1,74 @@
+﻿body {
+}
+.lblChkReceipt{
+    font-size:20px;
+}
+.footer {
+    position: fixed;
+    bottom: 0;
+    height: 10%;
+}
+.pagination1{
+    bottom:0;
+    position:fixed;
+}
+.lblReceipt {
+    background-color: white;
+    font-size: 20px;
+    font-weight:bold;
+}
+.details1{
+    visibility: hidden;
+    color:black;
+}
+glyphicon glyphicon-plus{
+    background-color: black;
+    font-size: 30px;
+    color: #a41e35;
+}
+.btn btn-primary{
+    background-color: #a41e35;
+}
+
+html {
+    white-space:normal;
+}
+
+.chkContainer{
+    background-color: white;
+    border-radius: 10px;
+}
+.chkContainer :hover {
+    background-color: lightgray;
+    color:black;
+    border-radius: 10px;
+}
+    .chkContainerText :hover {
+        background-color: lightgray;
+        color: black;
+        border-radius: 10px;
+    }
+
+@media (min-width: 576px) {
+    html {
+        font-size: 1.25rem;
+    }
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 992px) {
+    html {
+        font-size: 1.75rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    html {
+        font-size: 2rem;
+    }
+}

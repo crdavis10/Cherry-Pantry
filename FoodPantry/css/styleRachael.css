@@ -1,0 +1,50 @@
+﻿.btn-primary {
+	color: #ffffff;
+	background-color: #a41e35 !important;
+	border-color: #a41e35 !important;
+}
+.gap {
+	margin:50px;
+}
+
+.cart-icon {
+    width: 54px;
+    height: 54px;
+    margin-top: -22px;
+}
+
+.cart-title {
+    display: inline-block;
+}
+
+.table thead > tr > th {
+    text-align: center;
+}
+
+.table tbody > tr > td {
+    padding: 15px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.table tbody > tr > td.button-group {
+    text-align: right;
+}
+
+.table tfoot > tr > td {
+    padding: 15px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.table tfoot > tr > td.button-group {
+    text-align: right;
+}
+
+.table thead > tr > th {
+    font-size: 20px;
+}
+
+.header-container {
+    margin-bottom: 20px;
+}
