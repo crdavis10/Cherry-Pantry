@@ -1,10 +1,14 @@
 ﻿<%@ Page Title="Export" Language="C#" MasterPageFile="~/FoodPantry.Master" AutoEventWireup="true" CodeBehind="Export.aspx.cs" Inherits="WebApplication1.Export" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container">
-        <div class="row">
-            <h1>To export the inventory as a CSV, please select the button below </h1>
-            <hr />
+        <div class="row header-container">
+    <div class="col-md-12">
+        <div class="control-label">
+            <h1 class="cart-title">To export the inventory as a CSV, please select the button below</h1>
         </div>
+    </div>
+</div>
+        <hr />
         <div class="row">
             <div class="col-md-4 text-left" >
                 <br />

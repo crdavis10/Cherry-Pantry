@@ -2,6 +2,16 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container">
+        <div class="row header-container">
+    <div class="col-md-12">
+        <div class="control-label">
+            <h1 class="cart-title">Receipt</h1>
+        </div>
+    </div>
+</div>
+    </div>
+    <div class="container">
+
         <div class="row">
             <div class="col-lg-6 col-lg-offset-6">
                 <asp:Label ID="lblWelcome" CssClass="homeHeader" runat="server">
@@ -12,11 +22,7 @@
         </div>
         <div class="row"></div>
         <div class="row">
-            <div class="col-md-4">
-                <asp:Label ID="receipTitle" runat="server" CssClass="receiptHeader">
-                        <h1>Receipts</h1>
-                </asp:Label>
-            </div>
+
             <div class="col-md-4"></div>
             <div class="col-md-4"></div>
             <hr />
