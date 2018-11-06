@@ -6,9 +6,13 @@
 <div class="row header-container">
     <div class="col-md-12">
         <div class="control-label">
-            <h1 class="cart-title">Shopping Cart</h1>
+            <h1 class="cart-title">Checkout</h1>
         </div>
     </div>
+</div>
+  
+<div class="button">
+      <asp:Button ID="btnScanNew" Text="Scan New Item" runat="server" Class="btn btn-primary" />
 </div>
       
 <div class="row table-container">
