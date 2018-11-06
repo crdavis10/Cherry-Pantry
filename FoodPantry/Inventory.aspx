@@ -4,14 +4,18 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
     <div class="container">
-        <div>
-            <h1 class="d-inline-flex align-self-center">View Inventory</h1>
+        <div class="row header-container">
+    <div class="col-md-12">
+        <div class="control-label">
+            <h1 class="cart-title">Inventory</h1>
         </div>
+    </div>
+</div>
     </div>
 
     <div class="container  topNav">
-        <div class="row d-flex justify-content-between">
-            <asp:Button ID="btnAdd" runat="server" Text="Add New Items" Height="40px" Width="150px" CssClass="myBtn align-self-center" PostBackUrl="~/AddItem.aspx"/>
+        <div class="row d-flex justify-content-around">
+            <asp:Button ID="btnAdd" runat="server" Text="Add New Items" Height="40px" Width="150px" CssClass="myBtn align-self-end btn btn-primary" PostBackUrl="~/AddItem.aspx"/>
             <div>
             <asp:Label ID="lblUpcSearch" runat="server" Text="UPC Search: "></asp:Label>
             <div class="input-group add-on">
@@ -75,7 +79,7 @@
                 </div>
             </div>
             <div class="col-auto align-self-center">
-                <asp:Button ID="btnEdit" runat="server" Text="Edit" CssClass="editItemBtn myBtn" OnClick="btnEdit_Click" />
+                <asp:Button ID="btnEdit" runat="server" Text="Edit" CssClass="editItemBtn myBtn btn btn-primary" OnClick="btnEdit_Click" />
             </div>
         </div>
         <hr />
@@ -111,7 +115,7 @@
                 </div>
             </div>
             <div class="col-auto align-self-center">
-                <asp:Button ID="btnEdit2" runat="server" Text="Edit" CssClass="editItemBtn myBtn" />
+                <asp:Button ID="btnEdit2" runat="server" Text="Edit" CssClass="editItemBtn myBtn btn btn-primary" />
             </div>
         </div>
         <hr />
@@ -147,7 +151,7 @@
                 </div>
             </div>
             <div class="col-auto align-self-center">
-                <asp:Button ID="Button1" runat="server" Text="Edit" CssClass="editItemBtn myBtn" />
+                <asp:Button ID="Button1" runat="server" Text="Edit" CssClass="editItemBtn myBtn btn btn-primary" />
             </div>
         </div>
         <hr />
@@ -183,7 +187,7 @@
                 </div>
             </div>
             <div class="col-auto align-self-center">
-                <asp:Button ID="Button2" runat="server" Text="Edit" CssClass="editItemBtn myBtn" />
+                <asp:Button ID="Button2" runat="server" Text="Edit" CssClass="editItemBtn myBtn btn btn-primary" />
             </div>
         </div>
         <hr />
