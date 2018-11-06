@@ -15,7 +15,7 @@
         <div class="row">
         <div class="col-3">
             <asp:Label ID="lblCategory" runat="server" Text="Category"></asp:Label>
-            <asp:DropDownList ID="ddlFilter" runat="server" Width="200px" placeholder="Filter by" CssClass="ddFilter">
+            <asp:DropDownList ID="ddlFilter" runat="server"  CssClass="form-control inventoryddl">
                 <asp:ListItem>Soda</asp:ListItem>
                 <asp:ListItem>Bread</asp:ListItem>
                 <asp:ListItem>Beans</asp:ListItem>
@@ -26,14 +26,14 @@
         </div>
         <div class="col-3">
             <asp:Label ID="Label6" runat="server" Text="Donation Type"></asp:Label>
-            <asp:DropDownList ID="DropDownList1" runat="server" Width="200px" placeholder="Filter by" CssClass="ddFilter">
+            <asp:DropDownList ID="DropDownList1" runat="server"  CssClass="form-control inventoryddl">
                 <asp:ListItem>Donation</asp:ListItem>
                 <asp:ListItem>Purchased</asp:ListItem>
             </asp:DropDownList>
         </div>
         <div class="col-3">
             <asp:Label ID="Label8" runat="server" Text="Donor Type"></asp:Label>
-            <asp:DropDownList ID="DropDownList2" runat="server" Width="200px" placeholder="Filter by" CssClass="ddFilter">
+            <asp:DropDownList ID="DropDownList2" runat="server"  CssClass="form-control inventoryddl">
                 <asp:ListItem>Individual</asp:ListItem>
                 <asp:ListItem>Organization</asp:ListItem>
                 <asp:ListItem>Anonymous</asp:ListItem>
@@ -46,9 +46,11 @@
             </div>
         </div>
         </div>
+        <br />
+        <br />
         <div class="container itemContainer">
-        <div class="row">           
-            <div class="col-auto align-self-center">
+        <div class="d-flex justify-content-around">           
+            <div class="col-auto">
                 <div class="col lblDiv">
                     <div class="row d-flex justify-content-between itemRow">
                         <asp:Label ID="lblDonation" runat="server" Text="Donation Number: "></asp:Label>
@@ -96,10 +98,11 @@
                 <asp:Button ID="btnEdit" Text="Edit" runat="server" Class="btn btn-primary" />
             </div>
         </div>
+        <hr />
     </div>
     <div class="container itemContainer">
-        <div class="row">           
-            <div class="col-auto align-self-center">
+        <div class="d-flex justify-content-around">           
+            <div class="col-auto">
                 <div class="col lblDiv">
                     <div class="row d-flex justify-content-between itemRow">
                         <asp:Label ID="Label1" runat="server" Text="Donation Number: "></asp:Label>
@@ -140,6 +143,7 @@
             </div>
         </div>
     </div>
+    <hr />
 </div>
     <div class="container botNav">
         <nav >
