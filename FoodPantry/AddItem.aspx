@@ -4,9 +4,13 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <script src="js/AddItem.js"></script>
         <div class="container">
-        <div>
-            <h1 class="d-inline-flex align-self-center">Scan Item</h1>
+        <div class="row header-container">
+    <div class="col-md-12">
+        <div class="control-label">
+            <h1 class="cart-title">Scan Item</h1>
         </div>
+    </div>
+</div>
     </div>
 
     <div class="container topNav">
@@ -88,6 +92,36 @@
         </div>
     </div>
     <hr />
+
+        <div class="container">
+            <div class="itemRow">
+                <div class="row d-flex additemrow justify-content-between">
+                    <div class="rowItems">
+                        <asp:Label ID="Label1" runat="server" Text="Preview" Width="60px"></asp:Label>
+                    </div>
+                    <div class="rowItems">
+                        <asp:Label ID="Label2" runat="server" Text="UPC #" Width="130px"></asp:Label>
+                    </div>
+                    <div class="rowItems">
+                        <asp:Label ID="Label3" runat="server" Text="Category" Width="120px"></asp:Label>
+                    </div>
+                    <div class="rowItems">
+                        <asp:Label ID="Label4" runat="server" Text="Quantity" Width="80px"></asp:Label>
+                    </div>
+                    <div class="rowItems">
+                        <asp:Label ID="Label5" runat="server" Text="Points" Width="80px"></asp:Label>
+                    </div>
+                    <div class="rowItems">
+                        <asp:Label ID="Label6" runat="server" Text="Weight" Width="80px"></asp:Label>
+                    </div>
+                    <div class="rowItems">
+                        <asp:Label ID="Label7" runat="server" Text="Remove" Width="80px"></asp:Label>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    
     <div class="containercontainer">
         <div class="container itemContainer">
             <div class="itemRow">
@@ -690,12 +724,41 @@
                     </div>
                 </div>
             </div>
-            
+            <div class="itemRow">
+                <div class="row d-flex additemrow justify-content-between">
+                    <div class="rowItems">
+                        <asp:LinkButton runat="server" ID="LinkButton20" Text="<i class='fas fa-camera addItemImg'></i>" CssClass="" />
+                    </div>
+                    <div class="rowItems">
+                        <asp:TextBox ID="TextBox77" runat="server" Width="150px" CssClass="text-center form-control borderControl">039423959324</asp:TextBox>
+                    </div>
+                    <div class="rowItems">
+                        <asp:DropDownList ID="DropDownList20" runat="server" CssClass="ddDesc form-control text-center">
+                            <asp:ListItem>Peanut Butter</asp:ListItem>
+                            <asp:ListItem>Coffee</asp:ListItem>
+                            <asp:ListItem>Pastry</asp:ListItem>
+                            <asp:ListItem>Beverage</asp:ListItem>
+                        </asp:DropDownList>
+                    </div>
+                    <div class="rowItems">
+                        <asp:TextBox ID="TextBox78" runat="server" TextMode="Number" Width="80px" CssClass="text-center form-control borderControl"></asp:TextBox>
+                    </div>
+                    <div class="rowItems">
+                        <asp:TextBox ID="TextBox79" runat="server" TextMode="Number" Width="80px" CssClass="text-center form-control borderControl"></asp:TextBox>
+                    </div>
+                    <div class="rowItems">
+                        <asp:TextBox ID="TextBox80" runat="server" Width="80px" CssClass="text-center form-control borderControl"></asp:TextBox>
+                    </div>
+                    <div class="rowItems">
+                        <asp:Button ID="Button20" Text="Remove" runat="server" Class="btn btn-primary" />
+                    </div>
+                </div>
+            </div>
         </div>
         </div>
     <hr />
 
-    <div class="container">
+    <div class="container" id="botPortion">
         <div class="row d-flex justify-content-around">
             <asp:Button ID="btnSubmit" runat="server" Text="Submit" CssClass="submitItemBtn btn btn-primary" />
             <div>

@@ -106,3 +106,17 @@ a .lostpassText:hover {
     color: #ffcc00;
     text-decoration: none;
 }
+
+.btn-primary {
+    color: #ffffff;
+    background-color: #a41e35 !important;
+    border-color: #a41e35 !important;
+    font-family: "Open-Sans";
+}
+
+.btn-secondary {
+    color: #6c757d !important;
+    background-color: #ffffff !important;
+    border-color: #ced4da !important;
+    font-family: "Open-Sans";
+}
