@@ -1,51 +1,71 @@
-﻿body {
+﻿
+
+.lblChkReceipt {
+    font-size: 20px;
 }
-.lblChkReceipt{
-    font-size:20px;
-}
+
 .footer {
     position: fixed;
     bottom: 0;
     height: 10%;
 }
-.pagination1{
-    bottom:0;
-    position:fixed;
+
+.pagination1 {
+    bottom: 0;
+    position: fixed;
 }
+
 .lblReceipt {
     background-color: white;
     font-size: 20px;
-    font-weight:bold;
+    font-weight: bold;
 }
-.details1{
-    visibility: hidden;
-    color:black;
+
+#details1 {
+    display: none;
 }
-glyphicon glyphicon-plus{
-    background-color: black;
-    font-size: 30px;
-    color: #a41e35;
+
+#details2 {
+    display: none;
 }
-.btn btn-primary{
+
+#details3 {
+    display: none;
+}
+
+#details {
+    display: none;
+}
+
+#details21 {
+    display: none;
+}
+
+glyphicon glyphicon-plus {
+    color: black;
+}
+
+.btn btn-primary {
     background-color: #a41e35;
 }
 
 html {
-    white-space:normal;
+    white-space: normal;
 }
 
-.chkContainer{
+.chkContainer {
     background-color: white;
     border-radius: 10px;
 }
-.chkContainer :hover {
-    background-color: lightgray;
-    color:black;
-    border-radius: 10px;
-}
-    .chkContainerText :hover {
+
+    .chkContainer :hover {
         background-color: lightgray;
         color: black;
         border-radius: 10px;
     }
 
+.chkContainerText :hover {
+    background-color: lightgray;
+    color: black;
+    border-radius: 10px;
+}
