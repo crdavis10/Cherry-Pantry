@@ -98,7 +98,7 @@
             </div>
         </div> -->
            
-        <hr style="width: 100%; height: 1px; border: none; color: #333; background-color: #333;" />
+        <hr  />
         <div class="row">
             <div class="col-md-4">
                 <asp:Label ID="Label4" runat="server">

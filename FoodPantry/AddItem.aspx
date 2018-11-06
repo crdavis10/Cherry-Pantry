@@ -17,17 +17,17 @@
         <div class="row d-flex justify-content-around" id="topPortion">
             <div class="col-auto">
                 <div class="row">
-                    <h5>Purchased or Donation</h5>
+                    <h5>Purchased or Donated</h5>
                 </div>
                 <div class="row">
                     <asp:RadioButtonList ID="RadioButtonList1" runat="server">
                         <asp:ListItem> Purchased</asp:ListItem>
-                        <asp:ListItem> Donation</asp:ListItem>
+                        <asp:ListItem> Donated</asp:ListItem>
                     </asp:RadioButtonList>
                 </div>
             </div>
             <div class="col-auto">
-                <div class="row">
+                <div class="row donorrow">
                     <div class="col-auto affiliateCol">
                         <div class="row">
                         <h5>Temple Affliation</h5>
@@ -78,6 +78,11 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="col-auto d-flex align-items-center">
+                <div class="row">
+                      <asp:Button ID="Button21" runat="server" Text="Submit Donation Details" CssClass="addItemBtn btn btn-primary " />
                 </div>
             </div>
         </div>
@@ -760,7 +765,7 @@
 
     <div class="container" id="botPortion">
         <div class="row d-flex justify-content-around">
-            <asp:Button ID="btnSubmit" runat="server" Text="Submit" CssClass="submitItemBtn btn btn-primary" />
+            <asp:Button ID="btnSubmit" runat="server" Text="Submit Entry" CssClass="submitItemBtn btn btn-primary" />
             <div>
                 <asp:Label ID="lblTotalQuantDesc" runat="server" Text="Total Quantity: "></asp:Label>
                 <asp:Label ID="lblTotalQuant" runat="server" Text="84" Font-Bold="True"></asp:Label>

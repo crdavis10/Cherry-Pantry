@@ -12,11 +12,12 @@
         </div>       
         <br />
         <br />
-        <div class="container  topNav">
+        <div class="container ">
         <div class="row d-flex justify-content-around">
             <div>
             <asp:Label ID="lblCategory" runat="server" Text="Category"></asp:Label>
             <asp:DropDownList ID="ddlFilter" runat="server"  CssClass="form-control inventoryddl">
+                <asp:ListItem>Select Category</asp:ListItem>
                 <asp:ListItem>Soda</asp:ListItem>
                 <asp:ListItem>Bread</asp:ListItem>
                 <asp:ListItem>Beans</asp:ListItem>
@@ -28,6 +29,7 @@
         <div>
             <asp:Label ID="Label6" runat="server" Text="Donation Type"></asp:Label>
             <asp:DropDownList ID="DropDownList1" runat="server"  CssClass="form-control inventoryddl">
+                <asp:ListItem>Select Type</asp:ListItem>
                 <asp:ListItem>Donation</asp:ListItem>
                 <asp:ListItem>Purchased</asp:ListItem>
             </asp:DropDownList>
@@ -35,20 +37,27 @@
         <div>
             <asp:Label ID="Label8" runat="server" Text="Donor Type"></asp:Label>
             <asp:DropDownList ID="DropDownList2" runat="server"  CssClass="form-control inventoryddl">
+                <asp:ListItem>Select Type</asp:ListItem>
                 <asp:ListItem>Individual</asp:ListItem>
                 <asp:ListItem>Organization</asp:ListItem>
                 <asp:ListItem>Anonymous</asp:ListItem>
             </asp:DropDownList>            
         </div>
-        <div>
-            <asp:Label ID="Label11" runat="server" Text="Search"></asp:Label>
-            <div class="input-group-btn">
-                    <button class="btn btn-default" type="submit"><i class="fas fa-search donorSearchIcon"></i></button>
+        
+            <div class="col-auto d-flex align-items-end">
+                <div class="input-group add-on">
+                
+                    <input class="form-control" placeholder="Search" name="srch-term" id="srch-term" type="text"/>
+                    <div class="input-group-btn">
+                        <button class="btn btn-default" type="submit"><i class="fas fa-search UpcSearchbtn"></i></button>
+                    </div>
+                </div>  
             </div>
+        
         </div>
         </div>
-        </div>
-        <br />
+        <hr />
+        
         <br />
         <div class="container itemContainer">
         <div class="d-flex justify-content-around">           

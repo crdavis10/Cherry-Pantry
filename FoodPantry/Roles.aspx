@@ -5,18 +5,27 @@
 
     <div class="container">
 <div class="row">
-    <div class="col-2">
+    <div class="col-auto">
         <div class="col-lg-9 col-md-4 control-label">
             <h1>Users</h1>
         </div>
+        <div class="usertypediv">
+            <asp:Label ID="Label16" runat="server" Text="User Status: "></asp:Label>
+            <asp:DropDownList ID="ddlFilter" runat="server"  CssClass="form-control inventoryddl">
+                <asp:ListItem>Active</asp:ListItem>
+                <asp:ListItem>Inactive</asp:ListItem>
+
+            </asp:DropDownList>
+                </div>
         <div class="col-lg-9 col-md-8">
             <asp:Button ID="Button1" Text="Add" runat="server" Class="btn btn-primary" />
         </div>
     </div>
 </div>
+        <hr />
 <!---->
-	<br />
-	<br />
+	
+	
 <div class="row">
 	<div class="col-2">
 		<div class="col-lg-9 col-md-3 control-label">

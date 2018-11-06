@@ -29,6 +29,7 @@
             <div>
                 <asp:Label ID="Label16" runat="server" Text="Category Filter: "></asp:Label>
             <asp:DropDownList ID="ddlFilter" runat="server"  CssClass="form-control inventoryddl">
+                <asp:ListItem>Select Category</asp:ListItem>
                 <asp:ListItem>Peanut Butter</asp:ListItem>
                 <asp:ListItem>Coffee</asp:ListItem>
                 <asp:ListItem>Pastry</asp:ListItem>
@@ -38,6 +39,7 @@
             <div>
                 <asp:Label ID="Label17" runat="server" Text="Points Filter: "></asp:Label>
             <asp:DropDownList ID="DropDownList1" runat="server"  CssClass="form-control inventoryddl">
+                <asp:ListItem>Select Points</asp:ListItem>
                 <asp:ListItem>1</asp:ListItem>
                 <asp:ListItem>2</asp:ListItem>
                 <asp:ListItem>3</asp:ListItem>
@@ -46,8 +48,9 @@
             </asp:DropDownList>
             </div>
             </div>
+        <hr />
     </div>
-
+    
 
     <div class="container itemContainer">
         <div class="d-flex justify-content-around">

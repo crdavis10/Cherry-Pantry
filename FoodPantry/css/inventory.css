@@ -111,6 +111,11 @@ h5{
 .inventoryddl{
     width:auto;
 }
+
+.donorrow {
+    border-left: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+}
 /*                                add item                                   */
 .addItemImg {
     font-size: 33px;
