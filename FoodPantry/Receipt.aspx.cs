@@ -9,9 +9,14 @@ namespace WebApplication1
 {
     public partial class Receipt : System.Web.UI.Page
     {
+        int currentVal = 0;
+
         protected void Page_Load(object sender, EventArgs e)
         {
-           
+            
         }
+
+       
+
     }
 }

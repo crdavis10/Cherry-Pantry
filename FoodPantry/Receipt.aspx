@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/FoodPantry.Master" AutoEventWireup="true" CodeBehind="Receipt.aspx.cs" Inherits="WebApplication1.Receipt" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
             <div class="col-lg-6 col-lg-offset-6">
                 <asp:Label ID="lblWelcome" CssClass="homeHeader" runat="server">
@@ -38,29 +38,31 @@
                     <asp:Label ID="Label1" runat="server" CssClass="chkContainerText">
                    Order Number: 40 <br />
                    Description: Soda, Bread, Beans, Coffee <br />
-                   Order Quantity:5 <br />
+                   Order Quantity: 5 <br />
                    Total Points: 16 <br />
-                    </asp:Label> <!--
-                            <a href="javascript:void(0)" onclick="showReceiptDetails1()">
-                                      <span class="glyphicon glyphicon-plus" style="font-size:30px; color:#a41e35;"></span>                               
-                            </a> -->
-                    <br /> <!--
-                    <div class="details1">
-                          <asp:Label ID="details" CssClass="details1" runat="server">
+                    </asp:Label> 
+                    <br />
+                 <!--   <asp:Button ID="btnShowDetails" OnClientClick="showRDetails(); return false;" runat="server" CssClass="btn btn-primary" Text="Show Details"/> -->
+                  <!-- <input type="button" class="btn btn-primary" onclick="showRDetails(); return false;" value="Show Details" runat="server" /> -->
+                    <button type="button" id="btnShowDetails" class="btn btn-primary" value="Show Details" onclick="showRDetails(); return false;">Show Details</button> 
+                    <br />                    
+                    <div id="details">
+                          <asp:Label ID="detailsText" runat="server">
+                             <br />
                         1.Sprite ( 049000028928) <br />
                         2.Wonder Classic White (072250011372) <br />
                         3.Goya Pinto Beans (041331024723) <br />
                         4.Chock Full O Nuts (071038120008) <br />
                     </asp:Label>
-                    </div> -->
-                  
+                    </div> 
+                  <br />
                 </div>
                 <div class="col-md-3">
                 </div>
                 <div class="col-md-3"></div>
             </div>
         </div>
-        <br />
+        <br /> <!--
         <div class="chkContainer">
             <div class="row">
                 <div class="col-md-3">
@@ -68,18 +70,28 @@
                     <asp:Label ID="Label2" runat="server" CssClass="chkContainerText">
                    Order Number: 39 <br />
                    Description: Soda, Gronola Bar, Mac & Cheese <br />
-                   Order Quantity:5 <br />
+                   Order Quantity: 5 <br />
                    Total Points: 15 <br />
-                    </asp:Label> <!--
-                    <a href="javascript:void(0)" onclick="showReceiptDetails2(this)">
-                                      <span class="glyphicon glyphicon-plus" style="font-size:30px; color:#a41e35;"></span>                               
-                            </a> -->
+                    </asp:Label>
+                    <br />
+                     <button type="button" id="btnShowDetails1" class="btn btn-primary" value="Show Details" onclick="showRDetails(); return false;">Show Details</button> 
+                    <br />
+                     <div id="details1">
+                          <asp:Label ID="detailsText1" CssClass="details1" runat="server">
+                             <br />
+                        1.Sprite ( 049000028928) <br />
+                        2.Wonder Classic White (072250011372) <br />
+                        3.Goya Pinto Beans (041331024723) <br />
+                        4.Chock Full O Nuts (071038120008) <br />
+                    </asp:Label>
+                    </div> 
                 </div>
                 <div class="col-md-3">
                 </div>
                 <div class="col-md-3"></div>
             </div>
-        </div>
+        </div> -->
+           
         <hr style="width: 100%; height: 1px; border: none; color: #333; background-color: #333;" />
         <div class="row">
             <div class="col-md-4">
@@ -98,9 +110,21 @@
                     <asp:Label ID="Label3" runat="server" CssClass="chkContainerText">
                    Order Number: 39 <br />
                    Description: Soda, Gronola Bar, Mac & Cheese <br />
-                   Order Quantity:5 <br />
+                   Order Quantity: 5 <br />
                    Total Points: 15 <br />
                     </asp:Label>
+                    <br />
+                      <button type="button" id="btnShowDetails1" class="btn btn-primary" value="Show Details" onclick="showRDetails1(); return false;">Show Details</button> 
+                      <br />
+                     <div id="details1">
+                          <asp:Label ID="detailsText2" CssClass="details1" runat="server">
+                             <br />
+                        1.Sprite ( 049000028928) <br />
+                        2.Wonder Classic White (072250011372) <br />
+                        3.Goya Pinto Beans (041331024723) <br />
+                        4.Chock Full O Nuts (071038120008) <br />
+                    </asp:Label>
+                    </div> 
                     <!--
                     <a href="javascript:void(0)" onclick="showReceiptDetails3(this)">
                                       <span class="glyphicon glyphicon-plus" style="font-size:30px; color:#a41e35;"></span>                               
@@ -120,7 +144,20 @@
                    Description: Mac & Cheese, Bread, Canned Soup, Apple Juice <br />
                    Order Quantity:7 <br />
                    Total Points: 16 <br />
-                    </asp:Label> <!--
+                    </asp:Label>
+                    <br />
+                     <button type="button" id="btnShowDetails2" class="btn btn-primary" value="Show Details" onclick="showRDetails2(); return false;">Show Details</button> 
+                       <br />
+                     <div id="details2">
+                          <asp:Label ID="detailsText3" CssClass="details1" runat="server">
+                             <br />
+                        1.Sprite ( 049000028928) <br />
+                        2.Wonder Classic White (072250011372) <br />
+                        3.Goya Pinto Beans (041331024723) <br />
+                        4.Chock Full O Nuts (071038120008) <br />
+                    </asp:Label>
+                    </div> 
+                    <!--
                     <a href="javascript:void(0)" onclick="showReceiptDetails4(this)">
                                       <span class="glyphicon glyphicon-plus" style="font-size:30px; color:#a41e35;"></span>                               
                             </a> -->
@@ -132,17 +169,20 @@
         </div>
         <br />
         <br />
-        <nav aria-label="Page navigation example">
-            <div class="text-center">
-                <ul class="pagination">
-    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-    <li class="page-item"><a class="page-link" href="#">1</a></li>
-    <li class="page-item"><a class="page-link" href="#">2</a></li>
-    <li class="page-item"><a class="page-link" href="#">3</a></li>
-    <li class="page-item"><a class="page-link" href="#">Next</a></li>
-  </ul>
-            </div>
-  
-</nav>
+          <div class="container botNav">
+        <nav >
+          <ul class="pagination justify-content-center">
+            <li class="page-item disabled">
+              <a class="page-link" href="#" tabindex="-1">Previous</a>
+            </li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#">Next</a>
+            </li>
+          </ul>
+        </nav>
+    </div>
     </div>
 </asp:Content>
