@@ -97,7 +97,7 @@
                 </div>
             </div>
             <div class="col-4">
-                <asp:Button ID="btnEdit" Text="Edit" runat="server" Class="btn btn-primary" />
+                <asp:Button ID="btnEdit" Text="Edit" runat="server" Class="btn btn-primary" PostBackUrl="~/AddItem.aspx"/>
             </div>
         </div>
         <hr />
@@ -141,7 +141,7 @@
                 </div>
             </div> 
             <div class="col-4">
-                <asp:Button ID="Button1" Text="Edit" runat="server" Class="btn btn-primary" />
+                <asp:Button ID="Button1" Text="Edit" runat="server" Class="btn btn-primary" PostBackUrl="~/AddItem.aspx"/>
             </div>
         </div>
     </div>
