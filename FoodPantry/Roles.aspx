@@ -128,19 +128,19 @@
 	<br />
 	<div class="col-2">
 		<div class="col-lg-9 col-md-8">
-			<asp:TextBox ID="txtval9" runat="server" CssClass="form-control" placeholder="First Name"></asp:TextBox>
+			<asp:TextBox ID="txtval9" runat="server" CssClass="form-control"></asp:TextBox>
 		</div>
 	</div>
 
     <div class="col-2">
         <div class="col-lg-9 col-md-8">
-            <asp:TextBox ID="TextBox1" runat="server" CssClass="form-control" placeholder="Last Name"></asp:TextBox>
+            <asp:TextBox ID="TextBox1" runat="server" CssClass="form-control"></asp:TextBox>
         </div>
     </div>
 
 	<div class="col-2">
 		<div class="col-lg-9 col-md-8">
-			<asp:TextBox ID="txtval10" runat="server" CssClass="form-control" placeholder="Enter Email"></asp:TextBox>
+			<asp:TextBox ID="txtval10" runat="server" CssClass="form-control"></asp:TextBox>
 		</div>
 	</div>
 
