@@ -12,14 +12,21 @@ a{
     color:#a41e35 ;
 }
 
+h3{
+    font-size:35px;
+    color:#a41e35;
+}
+
 h4 {
     font-size: 12px;
     color: #a41e35;
     text-align: center;
     width:-webkit-fill-available;
-
 }
 
+h5{
+    color:#a41e35;
+}
 /*                                view inventroy                                   */
 .invImg{
     max-width:100px;
@@ -35,12 +42,8 @@ h4 {
 }
 
 .itemContainer{
-    border-top:2px solid #222;
-    padding-top:15px;
     margin-top:15px;
     margin-bottom:15px;
-    padding-bottom:15px;
-    border-bottom:2px solid #222;
     height:100%;
     overflow:auto;
 }
@@ -97,17 +100,27 @@ h4 {
     border-radius:5px;
 }
 
-/*                                add item                                   */
-
-.addItemImg{
-    font-size:25px;
-    position:relative;
+.UpcSearchbtn{
+    color:#a41e35;
 }
 
-.ddDesc{
+.input-group {
+    width: 200px;
+}
+
+.inventoryddl{
+    width:auto;
+}
+/*                                add item                                   */
+.addItemImg {
+    font-size: 33px;
+    position: relative;
+}
+
+/*.ddDesc{
     border:1px solid;
     border-radius:5px;
-}
+}*/
 
 .rowDetail{
     height:40px;
@@ -118,10 +131,10 @@ h4 {
     padding:5px 0;
 }
 
-.borderControl{
+/*.borderControl{
     border:1px solid;
     border-radius:5px;
-}
+}*/
 
 .containercontainer{
     height:50vh;
@@ -137,7 +150,14 @@ h4 {
     margin:0 30px;
 }
 
-.closeDiv{
-    justify-content:center;
+#closeDiv{
     margin:15px 0;
+}
+
+.hideTop{
+    display:none;
+}
+
+.additemrow{
+    margin-bottom:15px;
 }

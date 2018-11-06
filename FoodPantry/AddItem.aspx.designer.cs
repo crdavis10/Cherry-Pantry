@@ -103,13 +103,13 @@ namespace FoodPantry {
         protected global::System.Web.UI.WebControls.TextBox txtDonorEmail;
         
         /// <summary>
-        /// lbtnArrow control.
+        /// btnAddItem control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton lbtnArrow;
+        protected global::System.Web.UI.WebControls.Button btnAddItem;
         
         /// <summary>
         /// btnCamera control.
@@ -166,13 +166,13 @@ namespace FoodPantry {
         protected global::System.Web.UI.WebControls.TextBox txtWeight;
         
         /// <summary>
-        /// btnDel control.
+        /// btnRemove control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton btnDel;
+        protected global::System.Web.UI.WebControls.Button btnRemove;
         
         /// <summary>
         /// LinkButton1 control.
@@ -229,6 +229,15 @@ namespace FoodPantry {
         protected global::System.Web.UI.WebControls.TextBox TextBox4;
         
         /// <summary>
+        /// Button1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button1;
+        
+        /// <summary>
         /// LinkButton2 control.
         /// </summary>
         /// <remarks>
@@ -236,15 +245,6 @@ namespace FoodPantry {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.LinkButton LinkButton2;
-        
-        /// <summary>
-        /// LinkButton3 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton3;
         
         /// <summary>
         /// TextBox5 control.
@@ -292,22 +292,22 @@ namespace FoodPantry {
         protected global::System.Web.UI.WebControls.TextBox TextBox8;
         
         /// <summary>
-        /// LinkButton4 control.
+        /// Button2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton4;
+        protected global::System.Web.UI.WebControls.Button Button2;
         
         /// <summary>
-        /// LinkButton5 control.
+        /// LinkButton3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton5;
+        protected global::System.Web.UI.WebControls.LinkButton LinkButton3;
         
         /// <summary>
         /// TextBox9 control.
@@ -355,22 +355,22 @@ namespace FoodPantry {
         protected global::System.Web.UI.WebControls.TextBox TextBox12;
         
         /// <summary>
-        /// LinkButton6 control.
+        /// Button3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton6;
+        protected global::System.Web.UI.WebControls.Button Button3;
         
         /// <summary>
-        /// LinkButton7 control.
+        /// LinkButton4 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton7;
+        protected global::System.Web.UI.WebControls.LinkButton LinkButton4;
         
         /// <summary>
         /// TextBox13 control.
@@ -418,22 +418,22 @@ namespace FoodPantry {
         protected global::System.Web.UI.WebControls.TextBox TextBox16;
         
         /// <summary>
-        /// LinkButton8 control.
+        /// Button4 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton8;
+        protected global::System.Web.UI.WebControls.Button Button4;
         
         /// <summary>
-        /// LinkButton9 control.
+        /// LinkButton5 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton9;
+        protected global::System.Web.UI.WebControls.LinkButton LinkButton5;
         
         /// <summary>
         /// TextBox17 control.
@@ -481,22 +481,22 @@ namespace FoodPantry {
         protected global::System.Web.UI.WebControls.TextBox TextBox20;
         
         /// <summary>
-        /// LinkButton10 control.
+        /// Button5 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton10;
+        protected global::System.Web.UI.WebControls.Button Button5;
         
         /// <summary>
-        /// LinkButton11 control.
+        /// LinkButton6 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton11;
+        protected global::System.Web.UI.WebControls.LinkButton LinkButton6;
         
         /// <summary>
         /// TextBox21 control.
@@ -544,22 +544,22 @@ namespace FoodPantry {
         protected global::System.Web.UI.WebControls.TextBox TextBox24;
         
         /// <summary>
-        /// LinkButton12 control.
+        /// Button6 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton12;
+        protected global::System.Web.UI.WebControls.Button Button6;
         
         /// <summary>
-        /// LinkButton13 control.
+        /// LinkButton7 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton13;
+        protected global::System.Web.UI.WebControls.LinkButton LinkButton7;
         
         /// <summary>
         /// TextBox25 control.
@@ -607,22 +607,22 @@ namespace FoodPantry {
         protected global::System.Web.UI.WebControls.TextBox TextBox28;
         
         /// <summary>
-        /// LinkButton14 control.
+        /// Button7 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton14;
+        protected global::System.Web.UI.WebControls.Button Button7;
         
         /// <summary>
-        /// LinkButton15 control.
+        /// LinkButton8 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton15;
+        protected global::System.Web.UI.WebControls.LinkButton LinkButton8;
         
         /// <summary>
         /// TextBox29 control.
@@ -670,22 +670,22 @@ namespace FoodPantry {
         protected global::System.Web.UI.WebControls.TextBox TextBox32;
         
         /// <summary>
-        /// LinkButton16 control.
+        /// Button8 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton16;
+        protected global::System.Web.UI.WebControls.Button Button8;
         
         /// <summary>
-        /// LinkButton17 control.
+        /// LinkButton9 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton17;
+        protected global::System.Web.UI.WebControls.LinkButton LinkButton9;
         
         /// <summary>
         /// TextBox33 control.
@@ -733,22 +733,22 @@ namespace FoodPantry {
         protected global::System.Web.UI.WebControls.TextBox TextBox36;
         
         /// <summary>
-        /// LinkButton18 control.
+        /// Button9 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton18;
+        protected global::System.Web.UI.WebControls.Button Button9;
         
         /// <summary>
-        /// LinkButton19 control.
+        /// LinkButton10 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton19;
+        protected global::System.Web.UI.WebControls.LinkButton LinkButton10;
         
         /// <summary>
         /// TextBox37 control.
@@ -796,22 +796,22 @@ namespace FoodPantry {
         protected global::System.Web.UI.WebControls.TextBox TextBox40;
         
         /// <summary>
-        /// LinkButton20 control.
+        /// Button10 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton20;
+        protected global::System.Web.UI.WebControls.Button Button10;
         
         /// <summary>
-        /// LinkButton21 control.
+        /// LinkButton11 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton21;
+        protected global::System.Web.UI.WebControls.LinkButton LinkButton11;
         
         /// <summary>
         /// TextBox41 control.
@@ -859,22 +859,22 @@ namespace FoodPantry {
         protected global::System.Web.UI.WebControls.TextBox TextBox44;
         
         /// <summary>
-        /// LinkButton22 control.
+        /// Button11 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton22;
+        protected global::System.Web.UI.WebControls.Button Button11;
         
         /// <summary>
-        /// LinkButton23 control.
+        /// LinkButton12 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton23;
+        protected global::System.Web.UI.WebControls.LinkButton LinkButton12;
         
         /// <summary>
         /// TextBox45 control.
@@ -922,22 +922,22 @@ namespace FoodPantry {
         protected global::System.Web.UI.WebControls.TextBox TextBox48;
         
         /// <summary>
-        /// LinkButton24 control.
+        /// Button12 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton24;
+        protected global::System.Web.UI.WebControls.Button Button12;
         
         /// <summary>
-        /// LinkButton25 control.
+        /// LinkButton13 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton25;
+        protected global::System.Web.UI.WebControls.LinkButton LinkButton13;
         
         /// <summary>
         /// TextBox49 control.
@@ -985,22 +985,22 @@ namespace FoodPantry {
         protected global::System.Web.UI.WebControls.TextBox TextBox52;
         
         /// <summary>
-        /// LinkButton26 control.
+        /// Button13 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton26;
+        protected global::System.Web.UI.WebControls.Button Button13;
         
         /// <summary>
-        /// LinkButton27 control.
+        /// LinkButton14 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton27;
+        protected global::System.Web.UI.WebControls.LinkButton LinkButton14;
         
         /// <summary>
         /// TextBox53 control.
@@ -1048,22 +1048,22 @@ namespace FoodPantry {
         protected global::System.Web.UI.WebControls.TextBox TextBox56;
         
         /// <summary>
-        /// LinkButton28 control.
+        /// Button14 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton28;
+        protected global::System.Web.UI.WebControls.Button Button14;
         
         /// <summary>
-        /// LinkButton29 control.
+        /// LinkButton15 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton29;
+        protected global::System.Web.UI.WebControls.LinkButton LinkButton15;
         
         /// <summary>
         /// TextBox57 control.
@@ -1111,22 +1111,22 @@ namespace FoodPantry {
         protected global::System.Web.UI.WebControls.TextBox TextBox60;
         
         /// <summary>
-        /// LinkButton30 control.
+        /// Button15 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton30;
+        protected global::System.Web.UI.WebControls.Button Button15;
         
         /// <summary>
-        /// LinkButton31 control.
+        /// LinkButton16 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton31;
+        protected global::System.Web.UI.WebControls.LinkButton LinkButton16;
         
         /// <summary>
         /// TextBox61 control.
@@ -1174,22 +1174,22 @@ namespace FoodPantry {
         protected global::System.Web.UI.WebControls.TextBox TextBox64;
         
         /// <summary>
-        /// LinkButton32 control.
+        /// Button16 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton32;
+        protected global::System.Web.UI.WebControls.Button Button16;
         
         /// <summary>
-        /// LinkButton33 control.
+        /// LinkButton17 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton33;
+        protected global::System.Web.UI.WebControls.LinkButton LinkButton17;
         
         /// <summary>
         /// TextBox65 control.
@@ -1237,22 +1237,22 @@ namespace FoodPantry {
         protected global::System.Web.UI.WebControls.TextBox TextBox68;
         
         /// <summary>
-        /// LinkButton34 control.
+        /// Button17 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton34;
+        protected global::System.Web.UI.WebControls.Button Button17;
         
         /// <summary>
-        /// LinkButton35 control.
+        /// LinkButton18 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton35;
+        protected global::System.Web.UI.WebControls.LinkButton LinkButton18;
         
         /// <summary>
         /// TextBox69 control.
@@ -1300,22 +1300,22 @@ namespace FoodPantry {
         protected global::System.Web.UI.WebControls.TextBox TextBox72;
         
         /// <summary>
-        /// LinkButton36 control.
+        /// Button18 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton36;
+        protected global::System.Web.UI.WebControls.Button Button18;
         
         /// <summary>
-        /// LinkButton37 control.
+        /// LinkButton19 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton37;
+        protected global::System.Web.UI.WebControls.LinkButton LinkButton19;
         
         /// <summary>
         /// TextBox73 control.
@@ -1363,85 +1363,13 @@ namespace FoodPantry {
         protected global::System.Web.UI.WebControls.TextBox TextBox76;
         
         /// <summary>
-        /// LinkButton38 control.
+        /// Button19 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton38;
-        
-        /// <summary>
-        /// LinkButton39 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton39;
-        
-        /// <summary>
-        /// TextBox77 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox77;
-        
-        /// <summary>
-        /// DropDownList20 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList20;
-        
-        /// <summary>
-        /// TextBox78 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox78;
-        
-        /// <summary>
-        /// TextBox79 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox79;
-        
-        /// <summary>
-        /// TextBox80 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox80;
-        
-        /// <summary>
-        /// LinkButton40 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton40;
-        
-        /// <summary>
-        /// btnAddItem control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnAddItem;
+        protected global::System.Web.UI.WebControls.Button Button19;
         
         /// <summary>
         /// btnSubmit control.

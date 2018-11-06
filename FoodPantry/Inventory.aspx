@@ -1,25 +1,49 @@
-﻿<%@ Page Title="Inventory" Language="C#" MasterPageFile="~/FoodPantry.Master" AutoEventWireup="true" CodeBehind="Inventory.aspx.cs" Inherits="FoodPantry.Inventory" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/FoodPantry.Master" AutoEventWireup="true" CodeBehind="Inventory.aspx.cs" Inherits="FoodPantry.Inventory" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-
-    <div class="container d-flex justify-content-between topNav">
-        <asp:Button ID="btnAdd" runat="server" Text="Add New Item" Height="40px" Width="150px" CssClass="myBtn" />
-        <asp:DropDownList ID="ddlFilter" runat="server" Width="200px" placeholder="Filter by" CssClass="ddFilter">
-            <asp:ListItem>Peanut Butter</asp:ListItem>
-            <asp:ListItem>Coffee</asp:ListItem>
-            <asp:ListItem>Pastry</asp:ListItem>
-            <asp:ListItem>Beverage</asp:ListItem>
-        </asp:DropDownList>
-        <asp:TextBox ID="txtSearch" runat="server" TextMode="Search" Width="200px" placeholder="Search" CssClass="searchTxt"></asp:TextBox>
-    </div>
-
     <div class="container">
         <div>
-            <h3 class="d-inline-flex align-self-center">View Inventory</h3><i class="fas fa-list-ul headingIcon align-self-center"></i>
+            <h1 class="d-inline-flex align-self-center">View Inventory</h1>
         </div>
     </div>
+
+    <div class="container  topNav">
+        <div class="row d-flex justify-content-between">
+            <asp:Button ID="btnAdd" runat="server" Text="Add New Items" Height="40px" Width="150px" CssClass="myBtn align-self-center" PostBackUrl="~/AddItem.aspx"/>
+            <div>
+            <asp:Label ID="lblUpcSearch" runat="server" Text="UPC Search: "></asp:Label>
+            <div class="input-group add-on">
+                
+                    <input class="form-control" placeholder="Search" name="srch-term" id="srch-term" type="text"/>
+                    <div class="input-group-btn">
+                        <button class="btn btn-default" type="submit"><i class="fas fa-search UpcSearchbtn"></i></button>
+                    </div>
+                </div>   
+                </div>
+            <div>
+                <asp:Label ID="Label16" runat="server" Text="Category Filter: "></asp:Label>
+            <asp:DropDownList ID="ddlFilter" runat="server"  CssClass="form-control inventoryddl">
+                <asp:ListItem>Peanut Butter</asp:ListItem>
+                <asp:ListItem>Coffee</asp:ListItem>
+                <asp:ListItem>Pastry</asp:ListItem>
+                <asp:ListItem>Beverage</asp:ListItem>
+            </asp:DropDownList>
+                </div>
+            <div>
+                <asp:Label ID="Label17" runat="server" Text="Points Filter: "></asp:Label>
+            <asp:DropDownList ID="DropDownList1" runat="server"  CssClass="form-control inventoryddl">
+                <asp:ListItem>1</asp:ListItem>
+                <asp:ListItem>2</asp:ListItem>
+                <asp:ListItem>3</asp:ListItem>
+                <asp:ListItem>4</asp:ListItem>
+                <asp:ListItem>5</asp:ListItem>
+            </asp:DropDownList>
+            </div>
+            </div>
+    </div>
+
 
     <div class="container itemContainer">
         <div class="d-flex justify-content-around">
@@ -51,9 +75,10 @@
                 </div>
             </div>
             <div class="col-auto align-self-center">
-                <asp:Button ID="btnEdit" runat="server" Text="Edit Item" CssClass="editItemBtn myBtn" OnClick="btnEdit_Click" />
+                <asp:Button ID="btnEdit" runat="server" Text="Edit" CssClass="editItemBtn myBtn" OnClick="btnEdit_Click" />
             </div>
         </div>
+        <hr />
     </div>
 
     <div class="container itemContainer">
@@ -86,9 +111,10 @@
                 </div>
             </div>
             <div class="col-auto align-self-center">
-                <asp:Button ID="btnEdit2" runat="server" Text="Edit Item" CssClass="editItemBtn myBtn" />
+                <asp:Button ID="btnEdit2" runat="server" Text="Edit" CssClass="editItemBtn myBtn" />
             </div>
         </div>
+        <hr />
     </div>
 
     <div class="container itemContainer">
@@ -121,9 +147,10 @@
                 </div>
             </div>
             <div class="col-auto align-self-center">
-                <asp:Button ID="Button1" runat="server" Text="Edit Item" CssClass="editItemBtn myBtn" />
+                <asp:Button ID="Button1" runat="server" Text="Edit" CssClass="editItemBtn myBtn" />
             </div>
         </div>
+        <hr />
     </div>
 
     <div class="container itemContainer">
@@ -156,9 +183,10 @@
                 </div>
             </div>
             <div class="col-auto align-self-center">
-                <asp:Button ID="Button2" runat="server" Text="Edit Item" CssClass="editItemBtn myBtn" />
+                <asp:Button ID="Button2" runat="server" Text="Edit" CssClass="editItemBtn myBtn" />
             </div>
         </div>
+        <hr />
     </div>
 
     <div class="container botNav">

@@ -5,19 +5,18 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
-    <script src="js/Receipt.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/inventory.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"/>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet"/>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/receipt.css" />
-    <link rel="stylesheet" type="text/css" href="css/styleRachael.css" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
-   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/inventory.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/receipt.css" />
+    <link rel="stylesheet" href="css/styleRachael.css" />
+ 
 <body>
     <form id="form1" runat="server">
         <nav class="navbar navbar-expand-lg navbar-light">

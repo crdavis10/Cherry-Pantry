@@ -74,8 +74,11 @@
     <Content Include="css\styleRachael.css" />
     <Content Include="Donor.aspx" />
     <Content Include="Export.aspx" />
+    <Content Include="images\cherrypantry.png" />
     <Content Include="images\cherrypantrycherry.png" />
+    <Content Include="js\AddItem.js" />
     <Content Include="Login.aspx" />
+    <Content Include="LoginColin.aspx" />
     <Content Include="packages.config" />
     <Content Include="FoodPantry.Master" />
     <None Include="Web.Debug.config">
@@ -140,6 +143,13 @@
     </Compile>
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoginColin.aspx.cs">
+      <DependentUpon>LoginColin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoginColin.aspx.designer.cs">
+      <DependentUpon>LoginColin.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Receipt.aspx.cs">
