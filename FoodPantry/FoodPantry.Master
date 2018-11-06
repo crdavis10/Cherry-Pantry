@@ -42,7 +42,7 @@
                 <a class="nav-link" href="Roles.aspx">Roles</a>
               </li>
                 <li class="nav-item">
-                <a class="nav-link" href="Donor.aspx">Donor</a>
+                <a class="nav-link" href="Donation.aspx">Donations</a>
               </li>
                 <li class="nav-item">
                 <a class="nav-link" href="Receipt.aspx">Receipts</a>
