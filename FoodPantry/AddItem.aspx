@@ -7,7 +7,7 @@
         <div class="row header-container">
     <div class="col-md-12">
         <div class="control-label">
-            <h1 class="cart-title">Scan Item</h1>
+            <h1 class="cart-title">Add Inventory</h1>
         </div>
     </div>
 </div>
