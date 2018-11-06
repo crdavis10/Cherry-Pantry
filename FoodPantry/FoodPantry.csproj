@@ -72,6 +72,7 @@
     <Content Include="css\receipt.css" />
     <Content Include="css\style.css" />
     <Content Include="css\styleRachael.css" />
+    <Content Include="Donation.aspx" />
     <Content Include="Donor.aspx" />
     <Content Include="Export.aspx" />
     <Content Include="images\cherrypantry.png" />
@@ -108,6 +109,13 @@
     </Compile>
     <Compile Include="AddItem.aspx.designer.cs">
       <DependentUpon>AddItem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Donation.aspx.cs">
+      <DependentUpon>Donation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Donation.aspx.designer.cs">
+      <DependentUpon>Donation.aspx</DependentUpon>
     </Compile>
     <Compile Include="Donor.aspx.cs">
       <DependentUpon>Donor.aspx</DependentUpon>
