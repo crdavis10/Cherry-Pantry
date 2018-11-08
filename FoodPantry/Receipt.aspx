@@ -19,13 +19,76 @@
             </div>
         </div>
         <div class="row">
+            <div class="col-md-2">
+                 <asp:Label ID="lblSortReceipt" runat="server" Text="Filter Receipts"></asp:Label>
+            </div>
+            <div class="col-md-2">
+                <asp:Label ID="lblSortType" runat="server" Text="Sort Receipts"></asp:Label>
+            </div>
+           <div class="col-md-2">
+               <asp:Label ID="lblDateReceipt" runat="server" Text="Sort by Date"></asp:Label>
+           </div>
+            <div class="col-md-2">
+                 <asp:Label ID="lblSearchReceipt" runat="server" Text="Search By Order Number, Descripton"></asp:Label>
+            </div>
         </div>
-        <div class="row"></div>
         <div class="row">
-
-            <div class="col-md-4"></div>
-            <div class="col-md-4"></div>
+            <div class="col-md-2">
+                <asp:DropDownList ID="ddlReceiptSort" runat="server">
+                     <asp:ListItem Enabled="true" Text="Filter By" Value="-1"></asp:ListItem>
+                     <asp:ListItem Text="Order Number" Value="1"></asp:ListItem>
+                     <asp:ListItem Text="Points" Value="3"></asp:ListItem>
+                </asp:DropDownList>
+            </div>
+            <div class="col-md-2">
+                <asp:DropDownList ID="ddlSortType" runat="server">
+                     <asp:ListItem Enabled="true" Text="None" Value="-1"></asp:ListItem>
+                     <asp:ListItem Text="Low to High" Value="1"></asp:ListItem>
+                     <asp:ListItem Text="High to Low" Value="2"></asp:ListItem>
+                </asp:DropDownList>
+            </div>
+            <div class="col-md-2">
+                <asp:DropDownList ID="ddlSortDateReceipt" runat="server">
+                     <asp:ListItem Enabled="true" Text="None" Value="-1"></asp:ListItem>
+                     <asp:ListItem Text="January" Value="1"></asp:ListItem>
+                     <asp:ListItem Text="February" Value="2"></asp:ListItem>
+                     <asp:ListItem Text="March" Value="2"></asp:ListItem>
+                     <asp:ListItem Text="April" Value="1"></asp:ListItem>
+                     <asp:ListItem Text="May" Value="2"></asp:ListItem>
+                     <asp:ListItem Text="June" Value="2"></asp:ListItem>
+                     <asp:ListItem Text="July" Value="1"></asp:ListItem>
+                     <asp:ListItem Text="August" Value="2"></asp:ListItem>
+                     <asp:ListItem Text="September" Value="2"></asp:ListItem>
+                     <asp:ListItem Text="October" Value="1"></asp:ListItem>
+                     <asp:ListItem Text="November" Value="2"></asp:ListItem>
+                     <asp:ListItem Text="December" Value="2"></asp:ListItem>
+                </asp:DropDownList>
+               
+            </div>
+            <div class="col-md-2">
+                 <asp:TextBox ID="txtSearchReceipt" runat="server"></asp:TextBox>
+            </div>
+            <div class="col-md-3"></div>
+            <br />
+            <br />
+        </div>
+        <div class="row">
+            <br />
             <hr />
+            <div class="col-md-4">
+                  <asp:Button ID="btnSubmitReceiptSort" runat="server" Text="Submit" CssClass="btn btn-primary" />
+            </div>
+            <div class="col-md-4"></div>
+            <div class="col-md-4"></div>
+           
+            <hr />
+        </div>
+        <hr />
+        <div class="row">
+           
+            <div class="col-md-4"></div>
+            <div class="col-md-4"></div>
+           
         </div>
         <div class="row">
             <div class="col-md-4">
@@ -122,6 +185,7 @@
                     <br />
                       <button type="button" id="btnShowDetails1" class="btn btn-primary" value="Show Details" onclick="showRDetails1(); return false;">Show Details</button> 
                       <br />
+                      <br />
                      <div id="details1">
                           <asp:Label ID="detailsText2" CssClass="details1" runat="server">
                              <br />
@@ -148,12 +212,13 @@
                     <asp:Label ID="Label5" runat="server" CssClass="chkContainerText">
                    Order Number: 38 <br />
                    Description: Mac & Cheese, Bread, Canned Soup, Apple Juice <br />
-                   Order Quantity:7 <br />
+                   Order Quantity: 7 <br />
                    Total Points: 16 <br />
                     </asp:Label>
                     <br />
                      <button type="button" id="btnShowDetails2" class="btn btn-primary" value="Show Details" onclick="showRDetails2(); return false;">Show Details</button> 
                        <br />
+                        <br />
                      <div id="details2">
                           <asp:Label ID="detailsText3" CssClass="details1" runat="server">
                              <br />

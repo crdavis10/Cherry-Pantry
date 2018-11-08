@@ -147,3 +147,24 @@ C:\Users\tug12\Desktop\Pantry\Cherry-Pantry\FoodPantry\obj\Debug\FoodPantry.cspr
 C:\Users\tug12\Desktop\Pantry\Cherry-Pantry\FoodPantry\obj\Debug\FoodPantry.csproj.CopyComplete
 C:\Users\tug12\Desktop\Pantry\Cherry-Pantry\FoodPantry\obj\Debug\FoodPantry.dll
 C:\Users\tug12\Desktop\Pantry\Cherry-Pantry\FoodPantry\obj\Debug\FoodPantry.pdb
+C:\Users\acho\Documents\Git Master\Cherry-Pantry\FoodPantry\bin\roslyn\csc.exe
+C:\Users\acho\Documents\Git Master\Cherry-Pantry\FoodPantry\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\acho\Documents\Git Master\Cherry-Pantry\FoodPantry\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\acho\Documents\Git Master\Cherry-Pantry\FoodPantry\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\acho\Documents\Git Master\Cherry-Pantry\FoodPantry\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\acho\Documents\Git Master\Cherry-Pantry\FoodPantry\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\acho\Documents\Git Master\Cherry-Pantry\FoodPantry\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\acho\Documents\Git Master\Cherry-Pantry\FoodPantry\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\acho\Documents\Git Master\Cherry-Pantry\FoodPantry\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\acho\Documents\Git Master\Cherry-Pantry\FoodPantry\bin\roslyn\vbc.exe
+C:\Users\acho\Documents\Git Master\Cherry-Pantry\FoodPantry\bin\roslyn\VBCSCompiler.exe
+C:\Users\acho\Documents\Git Master\Cherry-Pantry\FoodPantry\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\acho\Documents\Git Master\Cherry-Pantry\FoodPantry\bin\FoodPantry.dll.config
+C:\Users\acho\Documents\Git Master\Cherry-Pantry\FoodPantry\bin\FoodPantry.dll
+C:\Users\acho\Documents\Git Master\Cherry-Pantry\FoodPantry\bin\FoodPantry.pdb
+C:\Users\acho\Documents\Git Master\Cherry-Pantry\FoodPantry\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\acho\Documents\Git Master\Cherry-Pantry\FoodPantry\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\acho\Documents\Git Master\Cherry-Pantry\FoodPantry\obj\Debug\FoodPantry.csprojResolveAssemblyReference.cache
+C:\Users\acho\Documents\Git Master\Cherry-Pantry\FoodPantry\obj\Debug\FoodPantry.csproj.CoreCompileInputs.cache
+C:\Users\acho\Documents\Git Master\Cherry-Pantry\FoodPantry\obj\Debug\FoodPantry.dll
+C:\Users\acho\Documents\Git Master\Cherry-Pantry\FoodPantry\obj\Debug\FoodPantry.pdb
