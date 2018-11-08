@@ -11,12 +11,37 @@
             </div>
         </div>       
         <br />
-        <br />
-        <div class="container ">
-        <div class="row d-flex justify-content-around">
-            <div>
-            <asp:Label ID="lblCategory" runat="server" Text="Category"></asp:Label>
-            <asp:DropDownList ID="ddlFilter" runat="server"  CssClass="form-control inventoryddl">
+        <br /> 
+    <div class="row">
+        <div class="col-3">
+            <br />
+            <div class="input-group add-on">                
+                    <input class="form-control" placeholder="Search" name="srch-term" id="srch-term" type="text"/>
+                    <div class="input-group-btn">
+                        <button class="btn btn-default" type="submit"><i class="fas fa-search UpcSearchbtn"></i></button>
+                    </div>
+                </div>
+        </div>
+        <div class="col-3">
+            <asp:Label ID="Label1" runat="server" Text="Donation Type"></asp:Label>
+            <asp:DropDownList ID="DropDownList3" runat="server"  CssClass="form-control inventoryddl">
+                <asp:ListItem>Select Type</asp:ListItem>
+                <asp:ListItem>Donation</asp:ListItem>
+                <asp:ListItem>Purchased</asp:ListItem>
+            </asp:DropDownList>
+        </div>
+        <div class="col-3">
+            <asp:Label ID="Label2" runat="server" Text="Donor Type"></asp:Label>
+            <asp:DropDownList ID="DropDownList4" runat="server"  CssClass="form-control inventoryddl">
+                <asp:ListItem>Select Type</asp:ListItem>
+                <asp:ListItem>Individual</asp:ListItem>
+                <asp:ListItem>Organization</asp:ListItem>
+                <asp:ListItem>Anonymous</asp:ListItem>
+            </asp:DropDownList> 
+        </div>
+        <div class="col-2">
+            <asp:Label ID="Label3" runat="server" Text="Category"></asp:Label>
+            <asp:DropDownList ID="DropDownList5" runat="server"  CssClass="form-control inventoryddl">
                 <asp:ListItem>Select Category</asp:ListItem>
                 <asp:ListItem>Soda</asp:ListItem>
                 <asp:ListItem>Bread</asp:ListItem>
@@ -25,137 +50,156 @@
                 <asp:ListItem>Applesauce</asp:ListItem>
                 <asp:ListItem>Canned Veggies</asp:ListItem>
             </asp:DropDownList>
-            </div>
-        <div>
-            <asp:Label ID="Label6" runat="server" Text="Donation Type"></asp:Label>
-            <asp:DropDownList ID="DropDownList1" runat="server"  CssClass="form-control inventoryddl">
-                <asp:ListItem>Select Type</asp:ListItem>
-                <asp:ListItem>Donation</asp:ListItem>
-                <asp:ListItem>Purchased</asp:ListItem>
-            </asp:DropDownList>
-        </div>
-        <div>
-            <asp:Label ID="Label8" runat="server" Text="Donor Type"></asp:Label>
-            <asp:DropDownList ID="DropDownList2" runat="server"  CssClass="form-control inventoryddl">
-                <asp:ListItem>Select Type</asp:ListItem>
-                <asp:ListItem>Individual</asp:ListItem>
-                <asp:ListItem>Organization</asp:ListItem>
-                <asp:ListItem>Anonymous</asp:ListItem>
-            </asp:DropDownList>            
-        </div>
-        
-            <div class="col-auto d-flex align-items-end">
-                <div class="input-group add-on">
-                
-                    <input class="form-control" placeholder="Search" name="srch-term" id="srch-term" type="text"/>
-                    <div class="input-group-btn">
-                        <button class="btn btn-default" type="submit"><i class="fas fa-search UpcSearchbtn"></i></button>
-                    </div>
-                </div>  
-            </div>
-        
-        </div>
-        </div>
-        <hr />
-        
-        <br />
-        <div class="container itemContainer">
-        <div class="d-flex justify-content-around">           
-            <div class="col-auto">
-                <div class="col lblDiv">
-                    <div class="row d-flex justify-content-between itemRow">
-                        <asp:Label ID="lblDonation" runat="server" Text="Donation Number: "></asp:Label>
-                        <asp:TextBox ID="txtDonation" runat="server" CssClass="itemText" ReadOnly="True">10</asp:TextBox>
-                    </div>
-                    <div class="row d-flex justify-content-between itemRow">
-                        <asp:Label ID="lblDate" runat="server" Text="Date: "></asp:Label>
-                        <asp:TextBox ID="txtDate" runat="server"  CssClass="itemText" ReadOnly="True">10/24/2018</asp:TextBox>
-                    </div>
-                    <div class="row d-flex justify-content-between itemRow">
-                        <asp:Label ID="lblDonationType" runat="server" Text="Donation Type: "></asp:Label>
-                        <asp:TextBox ID="txtDonationType" runat="server" CssClass="itemText" ReadOnly="True">Donation</asp:TextBox>
-                    </div>
-                    <div class="row d-flex justify-content-between itemRow">
-                        <asp:Label ID="lblDonorType" runat="server" Text="Donor Type: "></asp:Label>
-                        <asp:TextBox ID="txtDonorType" runat="server" CssClass="itemText" ReadOnly="True">Individual</asp:TextBox>
-                    </div>
-                    <div class="row d-flex justify-content-between itemRow">
-                        <asp:Label ID="lblFirstName" runat="server" Text="First Name: "></asp:Label>
-                        <asp:TextBox ID="txtFirstName" runat="server" CssClass="itemText" ReadOnly="True">Shirely</asp:TextBox>
-                    </div>
-                    <div class="row d-flex justify-content-between itemRow">
-                        <asp:Label ID="lblLastName" runat="server" Text="Last Name: "></asp:Label>
-                        <asp:TextBox ID="txtLastName" runat="server" CssClass="itemText" ReadOnly="True">Grey</asp:TextBox>
-                    </div>
-                    <div class="row d-flex justify-content-between itemRow">
-                        <asp:Label ID="lblTemple" runat="server" Text="Temple Affiliation: "></asp:Label>
-                        <asp:TextBox ID="txtTemple" runat="server" CssClass="itemText" ReadOnly="True">Yes</asp:TextBox>
-                    </div>
-                    <div class="row d-flex justify-content-between itemRow">
-                        <asp:Label ID="lblTUID" runat="server" Text="TUID: "></asp:Label>
-                        <asp:TextBox ID="txtTUID" runat="server" CssClass="itemText" ReadOnly="True">923468237</asp:TextBox>
-                    </div>
-                    <div class="row d-flex justify-content-between itemRow">
-                        <asp:Label ID="lblEmail" runat="server" Text="Email: "></asp:Label>
-                        <asp:TextBox ID="txtEmail" runat="server" CssClass="itemText" ReadOnly="True">tuf63489@temple.edu</asp:TextBox>
-                    </div>
-                    <div class="row d-flex justify-content-between itemRow">
-                        <asp:Label ID="lblItem" runat="server" Text="Items: "></asp:Label>
-                        <asp:TextBox ID="txtItem" runat="server" CssClass="itemText" ReadOnly="True">Soda, Bread, Beans, Coffee</asp:TextBox>
-                    </div>
-                </div>
-            </div>
-            <div class="col-4">
-                <asp:Button ID="btnEdit" Text="Edit" runat="server" Class="btn btn-primary" PostBackUrl="~/AddItem.aspx"/>
-            </div>
-        </div>
-        <hr />
+        </div>      
     </div>
-    <div class="container itemContainer">
-        <div class="d-flex justify-content-around">           
-            <div class="col-auto">
-                <div class="col lblDiv">
-                    <div class="row d-flex justify-content-between itemRow">
-                        <asp:Label ID="Label1" runat="server" Text="Donation Number: "></asp:Label>
-                        <asp:TextBox ID="TextBox1" runat="server" CssClass="itemText" ReadOnly="True">20</asp:TextBox>
-                    </div>
-                    <div class="row d-flex justify-content-between itemRow">
-                        <asp:Label ID="Label2" runat="server" Text="Date: "></asp:Label>
-                        <asp:TextBox ID="TextBox2" runat="server"  CssClass="itemText" ReadOnly="True">10/30/2018</asp:TextBox>
-                    </div>
-                    <div class="row d-flex justify-content-between itemRow">
-                        <asp:Label ID="Label3" runat="server" Text="Donation Type: "></asp:Label>
-                        <asp:TextBox ID="TextBox3" runat="server" CssClass="itemText" ReadOnly="True">Donation</asp:TextBox>
-                    </div>
-                    <div class="row d-flex justify-content-between itemRow">
-                        <asp:Label ID="Label4" runat="server" Text="Donor Type: "></asp:Label>
-                        <asp:TextBox ID="TextBox4" runat="server" CssClass="itemText" ReadOnly="True">Organization</asp:TextBox>
-                    </div>
-                    <div class="row d-flex justify-content-between itemRow">
-                        <asp:Label ID="Label5" runat="server" Text="Organization Name: "></asp:Label>
-                        <asp:TextBox ID="TextBox5" runat="server" CssClass="itemText" ReadOnly="True">Giant Food Stores</asp:TextBox>
-                    </div>                   
-                    <div class="row d-flex justify-content-between itemRow">
-                        <asp:Label ID="Label7" runat="server" Text="Temple Affiliation: "></asp:Label>
-                        <asp:TextBox ID="TextBox7" runat="server" CssClass="itemText" ReadOnly="True">No</asp:TextBox>
-                    </div>
-                    <div class="row d-flex justify-content-between itemRow">
-                        <asp:Label ID="Label9" runat="server" Text="Email: "></asp:Label>
-                        <asp:TextBox ID="TextBox9" runat="server" CssClass="itemText" ReadOnly="True">service@peapod.com</asp:TextBox>
-                    </div>
-                    <div class="row d-flex justify-content-between itemRow">
-                        <asp:Label ID="Label10" runat="server" Text="Items: "></asp:Label>
-                        <asp:TextBox ID="TextBox10" runat="server" CssClass="itemText" ReadOnly="True">Applesauce,Canned Veggies,Cherry Pie Filling,Chocolate Chips,Soda, Bread, Beans, Coffee</asp:TextBox>
-                    </div>
-                </div>
-            </div> 
-            <div class="col-4">
-                <asp:Button ID="Button1" Text="Edit" runat="server" Class="btn btn-primary" PostBackUrl="~/AddItem.aspx"/>
-            </div>
+    <br />
+    <div class="row">
+	<div class="col-3">
+		<div class="col-lg-9 col-md-3 control-label">
+			<h3>Donation Number</h3>
+		</div>
+	</div>
+    <div class="col-3">
+        <div class="col-lg-9 col-md-3 control-label">
+            <h3>Donation Detail</h3>
         </div>
+    </div>
+
+	<div class="col-3">
+		<div class="col-lg-9 col-xs-3 control-label">
+			<h3>Donor Detail</h3>
+		</div>
+	</div>
+	<div class="col-2">
+		<div class="col-lg-9 col-md-3 control-label">
+			<h3>Items</h3>
+		</div>
+	</div>
     </div>
     <hr />
+<div class="row">
+    <div class="col-3">
+        <div class="col-lg-9 col-md-8">
+            <asp:TextBox ID="TextBox2" runat="server" CssClass="itemText" ReadOnly="True">10</asp:TextBox>
+        </div>
+    </div>
+    <div class="col-3">
+        <div class="col-lg-9 col-md-8">
+            <asp:Label ID="Label11" runat="server" Text="Date: "></asp:Label>
+            <asp:TextBox ID="TextBox6" runat="server"  CssClass="itemText" ReadOnly="True">10/24/2018</asp:TextBox>
+            <asp:Label ID="Label12" runat="server" Text="Donation Type: "></asp:Label>
+            <asp:TextBox ID="TextBox8" runat="server" CssClass="itemText" ReadOnly="True">Donation</asp:TextBox>
+        </div>
+    </div>
+    <div class="col-3">
+        <div class="col-lg-9 col-md-8">                       
+            <div class="panel-group">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h5 class="panel-title">
+                            <a data-toggle="collapse" href="#collapse1">Donor Detail</a>
+                        </h5>
+                    </div>
+                    <div id="collapse1" class="panel-collapse collapse">
+                        <asp:Label ID="Label19" runat="server" Text="Donor Type: "></asp:Label>
+                        <asp:TextBox ID="TextBox17" runat="server" CssClass="itemText" ReadOnly="True">Individual</asp:TextBox>
+                        <asp:Label ID="Label20" runat="server" Text="First Name: "></asp:Label>
+                        <asp:TextBox ID="TextBox18" runat="server" CssClass="itemText" ReadOnly="True">Shirely</asp:TextBox>
+                        <asp:Label ID="Label21" runat="server" Text="Last Name: "></asp:Label>
+                        <asp:TextBox ID="TextBox19" runat="server" CssClass="itemText" ReadOnly="True">Grey</asp:TextBox>
+                        <asp:Label ID="Label22" runat="server" Text="Temple Affiliation: "></asp:Label>
+                        <asp:TextBox ID="TextBox20" runat="server" CssClass="itemText" ReadOnly="True">Yes</asp:TextBox>
+                        <asp:Label ID="Label23" runat="server" Text="TUID: "></asp:Label>
+                        <asp:TextBox ID="TextBox21" runat="server" CssClass="itemText" ReadOnly="True">923468237</asp:TextBox>
+                        <asp:Label ID="Label24" runat="server" Text="Email: "></asp:Label>
+                        <asp:TextBox ID="TextBox22" runat="server" CssClass="itemText" ReadOnly="True">tuf63489@temple.edu</asp:TextBox>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-2">
+        <div class="col-lg-9 col-md-8">                       
+            <div class="panel-group">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h5 class="panel-title">
+                            <a data-toggle="collapse" href="#collapse2">Item Detail</a>
+                        </h5>
+                    </div>
+                    <div id="collapse2" class="panel-collapse collapse">
+                        <p>Soda<br />Bread<br />Beans<br />Coffee</p>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-1">
+        <asp:Button ID="Button2" Text="Edit" runat="server" Class="btn btn-primary" PostBackUrl="~/AddItem.aspx"/>
+    </div>
 </div>
+<hr />
+<div class="row">
+    <div class="col-3">
+        <div class="col-lg-9 col-md-8">
+            <asp:TextBox ID="TextBox1" runat="server" CssClass="itemText" ReadOnly="True">20</asp:TextBox>
+        </div>
+    </div>
+    <div class="col-3">
+        <div class="col-lg-9 col-md-8">
+            <asp:Label ID="Label14" runat="server" Text="Date: "></asp:Label>
+            <asp:TextBox ID="TextBox12" runat="server"  CssClass="itemText" ReadOnly="True">10/30/2018</asp:TextBox>
+            <asp:Label ID="Label15" runat="server" Text="Donation Type: "></asp:Label>
+            <asp:TextBox ID="TextBox13" runat="server" CssClass="itemText" ReadOnly="True">Donation</asp:TextBox>
+        </div>
+    </div>
+    <div class="col-3">
+        <div class="col-lg-9 col-md-8">                       
+            <div class="panel-group">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h5 class="panel-title">
+                            <a data-toggle="collapse" href="#collapse3">Donor Detail</a>
+                        </h5>
+                    </div>
+                    <div id="collapse3" class="panel-collapse collapse">
+                        <asp:Label ID="Label16" runat="server" Text="Donor Type: "></asp:Label>
+                        <asp:TextBox ID="TextBox14" runat="server" CssClass="itemText" ReadOnly="True">Organization</asp:TextBox>
+                        <asp:Label ID="Label17" runat="server" Text="Organization Name: "></asp:Label>
+                        <asp:TextBox ID="TextBox15" runat="server" CssClass="itemText" ReadOnly="True">Giant Food Stores</asp:TextBox>
+                        <asp:Label ID="Label27" runat="server" Text="Email: "></asp:Label>
+                        <asp:Label ID="Label18" runat="server" Text="Temple Affiliation: "></asp:Label>
+                        <asp:TextBox ID="TextBox16" runat="server" CssClass="itemText" ReadOnly="True">No</asp:TextBox>
+                        <asp:Label ID="Label25" runat="server" Text="Email: "></asp:Label>
+                        <asp:TextBox ID="TextBox23" runat="server" CssClass="itemText" ReadOnly="True">service@peapod.com</asp:TextBox>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-2">
+        <div class="col-lg-9 col-md-8">                       
+            <div class="panel-group">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h5 class="panel-title">
+                            <a data-toggle="collapse" href="#collapse4">Item Detail</a>
+                        </h5>
+                    </div>
+                    <div id="collapse4" class="panel-collapse collapse">
+                        <p>Applesauce<br />Canned Veggies<br />Cherry Pie Filling<br />Chocolate Chips<br />Soda<br />Bread<br />Beans<br />Coffee</p>                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-1">
+        <asp:Button ID="Button3" Text="Edit" runat="server" Class="btn btn-primary" PostBackUrl="~/AddItem.aspx"/>
+    </div>
+</div>
+</div>
+
     <div class="container botNav">
         <nav >
           <ul class="pagination justify-content-center">
