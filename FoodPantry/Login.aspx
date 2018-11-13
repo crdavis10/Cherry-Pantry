@@ -21,7 +21,7 @@
                 </div>
                 <div class="inputDiv formGroup">
                     <p class="lead inputText">Password</p>
-                    <asp:TextBox ID="txtPass" runat="server" CssClass="txtPassword" required></asp:TextBox>
+                    <asp:TextBox ID="txtPass" TextMode="Password" runat="server" CssClass="txtPassword" required></asp:TextBox>
                 </div>
                 <div class="row submitDiv">
                     <div class="col-6 submitCol">
