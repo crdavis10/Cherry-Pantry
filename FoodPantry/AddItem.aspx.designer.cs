@@ -22,6 +22,15 @@ namespace FoodPantry {
         protected global::System.Web.UI.WebControls.RadioButtonList RadioButtonList1;
         
         /// <summary>
+        /// lblDonorAffliation control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblDonorAffliation;
+        
+        /// <summary>
         /// ddlAffliation control.
         /// </summary>
         /// <remarks>
@@ -31,31 +40,40 @@ namespace FoodPantry {
         protected global::System.Web.UI.WebControls.DropDownList ddlAffliation;
         
         /// <summary>
-        /// DropDownList21 control.
+        /// lblDonorRegistered control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList21;
+        protected global::System.Web.UI.WebControls.Label lblDonorRegistered;
         
         /// <summary>
-        /// Label8 control.
+        /// ddlDonorRegistered control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label8;
+        protected global::System.Web.UI.WebControls.DropDownList ddlDonorRegistered;
         
         /// <summary>
-        /// TextBox81 control.
+        /// lblDonorOrganization control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox81;
+        protected global::System.Web.UI.WebControls.Label lblDonorOrganization;
+        
+        /// <summary>
+        /// txtDonorOrganization control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtDonorOrganization;
         
         /// <summary>
         /// lblDonorTUID control.
@@ -128,6 +146,15 @@ namespace FoodPantry {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtDonorEmail;
+        
+        /// <summary>
+        /// Button21 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button21;
         
         /// <summary>
         /// btnAddItem control.
@@ -227,6 +254,69 @@ namespace FoodPantry {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label7;
+        
+        /// <summary>
+        /// LinkButton21 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton LinkButton21;
+        
+        /// <summary>
+        /// TextBox82 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBox82;
+        
+        /// <summary>
+        /// DropDownList22 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList22;
+        
+        /// <summary>
+        /// TextBox83 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBox83;
+        
+        /// <summary>
+        /// TextBox84 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBox84;
+        
+        /// <summary>
+        /// TextBox85 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBox85;
+        
+        /// <summary>
+        /// Button22 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button22;
         
         /// <summary>
         /// LinkButton20 control.

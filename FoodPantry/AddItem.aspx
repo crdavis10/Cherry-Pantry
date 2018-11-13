@@ -30,22 +30,22 @@
                 <div class="row donorrow">
                     <div class="col-auto affiliateCol">
                         <div class="row">
-                        <h5>Temple Affliation: </h5>
+                        <asp:Label ID="lblDonorAffliation" runat="server" Text="Temple Affliation: "></asp:Label>
                         </div>
                         <div class="row">
-                            <asp:DropDownList ID="ddlAffliation" runat="server" CssClass="form-control">
+                            <asp:DropDownList ID="ddlAffliation" runat="server" CssClass="form-control" AutoPostBack="True" OnSelectedIndexChanged="ddlAffliation_SelectedIndexChanged">
                             <asp:ListItem>Select Affliation</asp:ListItem>
-                            <asp:ListItem>Yes</asp:ListItem>
-                            <asp:ListItem>No</asp:ListItem>
-                            <asp:ListItem>Anonymous</asp:ListItem>
+                            <asp:ListItem Value="yes">Yes</asp:ListItem>
+                            <asp:ListItem Value="no">No</asp:ListItem>
+                            <asp:ListItem Value="anonymous">Anonymous</asp:ListItem>
                         </asp:DropDownList>
                         </div>
 
                         <div class="row" style="margin-top:20px;">
-                        <h5>Registered Donors: </h5>
+                        <asp:Label ID="lblDonorRegistered" runat="server" Text="Registered Donors: "></asp:Label>
                         </div>
                         <div class="row">
-                            <asp:DropDownList ID="DropDownList21" runat="server" CssClass="form-control">
+                            <asp:DropDownList ID="ddlDonorRegistered" runat="server" CssClass="form-control">
                             <asp:ListItem>Select donor (if applicable)</asp:ListItem>
                             <asp:ListItem>Green Giant</asp:ListItem>
                             <asp:ListItem>Chef Boyardee</asp:ListItem>
@@ -53,16 +53,18 @@
                             <asp:ListItem>Heinz</asp:ListItem>
                             <asp:ListItem>Hunt's</asp:ListItem>
                             <asp:ListItem>English Department</asp:ListItem>
+                            <asp:ListItem>Chemistry Department</asp:ListItem>
+                            <asp:ListItem>Math Department</asp:ListItem>
                         </asp:DropDownList>
                         </div>
                     </div>
                     <div class="col-auto">
                         <div class="row">
                             <div class="col-4 d-flex align-items-center">
-                                <asp:Label ID="Label8" runat="server" Text="Organization: "></asp:Label>
+                                <asp:Label ID="lblDonorOrganization" runat="server" Text="Organization: "></asp:Label>
                             </div>
                             <div class="col-6">
-                                <asp:TextBox ID="TextBox81" runat="server" placeholder="Name" CssClass="form-control"></asp:TextBox>
+                                <asp:TextBox ID="txtDonorOrganization" runat="server" placeholder="Name" CssClass="form-control"></asp:TextBox>
                             </div>
                         </div>
                         <div class="row">
@@ -122,8 +124,10 @@
     </div>
         <div class="container">
             
-        <div class="row d-flex justify-content-center">
+        <div class="row d-flex justify-content-between">
+            <asp:Button ID="Button21" runat="server" Text="Add Item Manually" CssClass="addItemBtn btn btn-primary" />
             <asp:Button ID="btnAddItem" runat="server" Text="Scan New Item" CssClass="addItemBtn btn btn-primary" />
+            
         </div>
     </div>
     <hr />
@@ -170,6 +174,36 @@
     
     <div class="containercontainer">
         <div class="container itemContainer">
+            <div class="itemRow">
+                <div class="row d-flex additemrow justify-content-between">
+                    <div class="rowItems">
+                        <asp:LinkButton runat="server" ID="LinkButton21" Text="<i class='fas fa-camera addItemImg'></i>" CssClass="" />
+                    </div>
+                    <div class="rowItems">
+                        <asp:TextBox ID="TextBox82" runat="server" Width="150px" CssClass="text-center form-control borderControl"></asp:TextBox>
+                    </div>
+                    <div class="rowItems">
+                        <asp:DropDownList ID="DropDownList22" runat="server" CssClass="ddDesc form-control text-center">
+                            <asp:ListItem>Select Category</asp:ListItem><asp:ListItem>Peanut Butter</asp:ListItem>
+                            <asp:ListItem>Coffee</asp:ListItem>
+                            <asp:ListItem>Pastry</asp:ListItem>
+                            <asp:ListItem>Beverage</asp:ListItem>
+                        </asp:DropDownList>
+                    </div>
+                    <div class="rowItems">
+                        <asp:TextBox ID="TextBox83" runat="server" TextMode="Number" Width="80px" CssClass="text-center form-control borderControl"></asp:TextBox>
+                    </div>
+                    <div class="rowItems">
+                        <asp:TextBox ID="TextBox84" runat="server" TextMode="Number" Width="80px" CssClass="text-center form-control borderControl"></asp:TextBox>
+                    </div>
+                    <div class="rowItems">
+                        <asp:TextBox ID="TextBox85" runat="server" Width="80px" CssClass="text-center form-control borderControl"></asp:TextBox>
+                    </div>
+                    <div class="rowItems">
+                        <asp:Button ID="Button22" Text="Remove" runat="server" Class="btn btn-primary" />
+                    </div>
+                </div>
+            </div>
               <div class="itemRow">
                 <div class="row d-flex additemrow justify-content-between">
                     <div class="rowItems">
