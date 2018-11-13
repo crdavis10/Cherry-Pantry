@@ -64,7 +64,7 @@
                         <asp:TextBox ID="txtUpc" runat="server" CssClass="itemText" ReadOnly="True">037600106252</asp:TextBox>
                     </div>
                     <div class="row d-flex justify-content-between itemRow">
-                        <asp:Label ID="lblDesc" runat="server" Text="Description: "></asp:Label>
+                        <asp:Label ID="lblDesc" runat="server" Text="Category: "></asp:Label>
                         <asp:TextBox ID="txtDesc" runat="server"  CssClass="itemText" ReadOnly="True">Peanut Butter</asp:TextBox>
                     </div>
                     <div class="row d-flex justify-content-between itemRow">
@@ -100,7 +100,7 @@
                         <asp:TextBox ID="TextBox1" runat="server" CssClass="itemText" ReadOnly="True">619832931352</asp:TextBox>
                     </div>
                     <div class="row d-flex justify-content-between itemRow">
-                        <asp:Label ID="Label2" runat="server" Text="Description: "></asp:Label>
+                        <asp:Label ID="Label2" runat="server" Text="Category: "></asp:Label>
                         <asp:TextBox ID="TextBox2" runat="server" CssClass="itemText" ReadOnly="True">Coffee</asp:TextBox>
                     </div>
                     <div class="row d-flex justify-content-between itemRow">
@@ -136,7 +136,7 @@
                         <asp:TextBox ID="TextBox6" runat="server" CssClass="itemText" ReadOnly="True">017532612015</asp:TextBox>
                     </div>
                     <div class="row d-flex justify-content-between itemRow">
-                        <asp:Label ID="Label7" runat="server" Text="Description: "></asp:Label>
+                        <asp:Label ID="Label7" runat="server" Text="Category: "></asp:Label>
                         <asp:TextBox ID="TextBox7" runat="server" CssClass="itemText" ReadOnly="True">Pastry</asp:TextBox>
                     </div>
                     <div class="row d-flex justify-content-between itemRow">
@@ -172,7 +172,7 @@
                         <asp:TextBox ID="TextBox11" runat="server" CssClass="itemText" ReadOnly="True">120459820120</asp:TextBox>
                     </div>
                     <div class="row d-flex justify-content-between itemRow">
-                        <asp:Label ID="Label12" runat="server" Text="Description: "></asp:Label>
+                        <asp:Label ID="Label12" runat="server" Text="Category: "></asp:Label>
                         <asp:TextBox ID="TextBox12" runat="server" CssClass="itemText" ReadOnly="True">Beverage</asp:TextBox>
                     </div>
                     <div class="row d-flex justify-content-between itemRow">

@@ -13,7 +13,7 @@
 </div>
     </div>
 
-    <div class="container topNav">
+    <div class="container topNav show collapse topqdiv topediv">
         <div class="row d-flex justify-content-around" id="topPortion">
             <div class="col-auto">
                 <div class="row">
@@ -30,19 +30,43 @@
                 <div class="row donorrow">
                     <div class="col-auto affiliateCol">
                         <div class="row">
-                        <h5>Temple Affliation</h5>
+                        <h5>Temple Affliation: </h5>
                         </div>
                         <div class="row">
                             <asp:DropDownList ID="ddlAffliation" runat="server" CssClass="form-control">
+                            <asp:ListItem>Select Affliation</asp:ListItem>
                             <asp:ListItem>Yes</asp:ListItem>
                             <asp:ListItem>No</asp:ListItem>
                             <asp:ListItem>Anonymous</asp:ListItem>
                         </asp:DropDownList>
                         </div>
+
+                        <div class="row" style="margin-top:20px;">
+                        <h5>Registered Donors: </h5>
+                        </div>
+                        <div class="row">
+                            <asp:DropDownList ID="DropDownList21" runat="server" CssClass="form-control">
+                            <asp:ListItem>Select donor (if applicable)</asp:ListItem>
+                            <asp:ListItem>Green Giant</asp:ListItem>
+                            <asp:ListItem>Chef Boyardee</asp:ListItem>
+                            <asp:ListItem>Ayam Brand</asp:ListItem>
+                            <asp:ListItem>Heinz</asp:ListItem>
+                            <asp:ListItem>Hunt's</asp:ListItem>
+                            <asp:ListItem>English Department</asp:ListItem>
+                        </asp:DropDownList>
+                        </div>
                     </div>
                     <div class="col-auto">
                         <div class="row">
-                            <div class="col-4">
+                            <div class="col-4 d-flex align-items-center">
+                                <asp:Label ID="Label8" runat="server" Text="Organization: "></asp:Label>
+                            </div>
+                            <div class="col-6">
+                                <asp:TextBox ID="TextBox81" runat="server" placeholder="Name" CssClass="form-control"></asp:TextBox>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4 d-flex align-items-center">
                                 <asp:Label ID="lblDonorTUID" runat="server" Text="AccessNetID: "></asp:Label>
                             </div>
                             <div class="col-6">
@@ -50,7 +74,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-4">
+                            <div class="col-4 d-flex align-items-center">
                                 <asp:Label ID="lblDonorFirstName" runat="server" Text="First Name: "></asp:Label>
                             </div>
                             <div class="col-6">
@@ -60,7 +84,7 @@
                             
                         </div>
                         <div class="row">
-                            <div class="col-4">
+                            <div class="col-4 d-flex align-items-center">
                                 <asp:Label ID="lblDonorLastName" runat="server" Text="Last Name: "></asp:Label>
                             </div>
                             <div class="col-6">
@@ -70,8 +94,8 @@
                             
                         </div>
                         <div class="row">
-                            <div class="col-4">
-                                <asp:Label ID="lblDonorEmail" runat="server" Text="Email"></asp:Label>
+                            <div class="col-4 d-flex align-items-center">
+                                <asp:Label ID="lblDonorEmail" runat="server" Text="Email: "></asp:Label>
                             </div>
                             <div class="col-6">
                                 <asp:TextBox ID="txtDonorEmail" runat="server" TextMode="Email" placeholder="Email Address" CssClass="form-control"></asp:TextBox>
@@ -80,9 +104,10 @@
                     </div>
                 </div>
             </div>
+
             <div class="col-auto d-flex align-items-center">
                 <div class="row">
-                      <asp:Button ID="Button21" runat="server" Text="Submit Donation Details" CssClass="addItemBtn btn btn-primary " />
+                    <button class="btn btn-primary addItemBtn" type="button" data-toggle="collapse" data-target=".topqdiv" >Submit Donation Details</button>
                 </div>
             </div>
         </div>
@@ -90,10 +115,26 @@
             <asp:LinkButton runat="server" ID="lbtnArrow" Text="<i class='fas fa-chevron-up addItemImg'></i>" CssClass="topcloseBtn" OnClientClick="ToggleDiv('first');"/>
         </div>--%>
     </div>
-
+    <div class="container topqdiv topediv collapse">
+        <div class="d-flex justify-content-center">
+                <a class="" data-toggle="collapse" data-target=".topediv"><i class="fas fa-chevron-down" style="color:#a41e35;font-size:30px;margin-bottom:20px;"></i></a>
+            </div>
+    </div>
         <div class="container">
-        <div class="row">
+            
+        <div class="row d-flex justify-content-center">
             <asp:Button ID="btnAddItem" runat="server" Text="Scan New Item" CssClass="addItemBtn btn btn-primary" />
+        </div>
+    </div>
+    <hr />
+
+    <div class="container" id="botPortion">
+        <div class="row d-flex justify-content-between">
+            <asp:Button ID="btnSubmit" runat="server" Text="Submit Entry" CssClass="submitItemBtn btn btn-primary" />
+            <div>
+                <asp:Label ID="lblTotalQuantDesc" runat="server" Text="Total Quantity: "></asp:Label>
+                <asp:Label ID="lblTotalQuant" runat="server" Text="84" Font-Bold="True"></asp:Label>
+            </div>
         </div>
     </div>
     <hr />
@@ -129,6 +170,36 @@
     
     <div class="containercontainer">
         <div class="container itemContainer">
+              <div class="itemRow">
+                <div class="row d-flex additemrow justify-content-between">
+                    <div class="rowItems">
+                        <asp:LinkButton runat="server" ID="LinkButton20" Text="<i class='fas fa-camera addItemImg'></i>" CssClass="" />
+                    </div>
+                    <div class="rowItems">
+                        <asp:TextBox ID="TextBox77" runat="server" Width="150px" CssClass="text-center form-control borderControl">039423959324</asp:TextBox>
+                    </div>
+                    <div class="rowItems">
+                        <asp:DropDownList ID="DropDownList20" runat="server" CssClass="ddDesc form-control text-center">
+                            <asp:ListItem>Select Category</asp:ListItem><asp:ListItem>Peanut Butter</asp:ListItem>
+                            <asp:ListItem>Coffee</asp:ListItem>
+                            <asp:ListItem>Pastry</asp:ListItem>
+                            <asp:ListItem>Beverage</asp:ListItem>
+                        </asp:DropDownList>
+                    </div>
+                    <div class="rowItems">
+                        <asp:TextBox ID="TextBox78" runat="server" TextMode="Number" Width="80px" CssClass="text-center form-control borderControl"></asp:TextBox>
+                    </div>
+                    <div class="rowItems">
+                        <asp:TextBox ID="TextBox79" runat="server" TextMode="Number" Width="80px" CssClass="text-center form-control borderControl"></asp:TextBox>
+                    </div>
+                    <div class="rowItems">
+                        <asp:TextBox ID="TextBox80" runat="server" Width="80px" CssClass="text-center form-control borderControl"></asp:TextBox>
+                    </div>
+                    <div class="rowItems">
+                        <asp:Button ID="Button20" Text="Remove" runat="server" Class="btn btn-primary" />
+                    </div>
+                </div>
+            </div>
             <div class="itemRow">
                 <div class="row d-flex additemrow justify-content-between">
                     <div class="rowItems">
@@ -139,7 +210,7 @@
                     </div>
                     <div class="rowItems">
                         <asp:DropDownList ID="ddlCategory" runat="server" CssClass="ddDesc form-control text-center">
-                            <asp:ListItem>Peanut Butter</asp:ListItem>
+                            <asp:ListItem>Select Category</asp:ListItem><asp:ListItem>Select Category</asp:ListItem><asp:ListItem>Peanut Butter</asp:ListItem>
                             <asp:ListItem>Coffee</asp:ListItem>
                             <asp:ListItem>Pastry</asp:ListItem>
                             <asp:ListItem>Beverage</asp:ListItem>
@@ -159,6 +230,7 @@
                     </div>
                 </div>
             </div>
+                      
             <div class="itemRow">
                 <div class="row d-flex additemrow justify-content-between">
                     <div class="rowItems">
@@ -169,7 +241,7 @@
                     </div>
                     <div class="rowItems">
                         <asp:DropDownList ID="DropDownList1" runat="server" CssClass="ddDesc form-control text-center">
-                            <asp:ListItem>Peanut Butter</asp:ListItem>
+                            <asp:ListItem>Select Category</asp:ListItem><asp:ListItem>Select Category</asp:ListItem><asp:ListItem>Peanut Butter</asp:ListItem>
                             <asp:ListItem>Coffee</asp:ListItem>
                             <asp:ListItem>Pastry</asp:ListItem>
                             <asp:ListItem>Beverage</asp:ListItem>
@@ -199,7 +271,7 @@
                     </div>
                     <div class="rowItems">
                         <asp:DropDownList ID="DropDownList2" runat="server" CssClass="ddDesc form-control text-center">
-                            <asp:ListItem>Peanut Butter</asp:ListItem>
+                            <asp:ListItem>Select Category</asp:ListItem><asp:ListItem>Select Category</asp:ListItem><asp:ListItem>Peanut Butter</asp:ListItem>
                             <asp:ListItem>Coffee</asp:ListItem>
                             <asp:ListItem>Pastry</asp:ListItem>
                             <asp:ListItem>Beverage</asp:ListItem>
@@ -229,7 +301,7 @@
                     </div>
                     <div class="rowItems">
                         <asp:DropDownList ID="DropDownList3" runat="server" CssClass="ddDesc form-control text-center">
-                            <asp:ListItem>Peanut Butter</asp:ListItem>
+                            <asp:ListItem>Select Category</asp:ListItem><asp:ListItem>Select Category</asp:ListItem><asp:ListItem>Peanut Butter</asp:ListItem>
                             <asp:ListItem>Coffee</asp:ListItem>
                             <asp:ListItem>Pastry</asp:ListItem>
                             <asp:ListItem>Beverage</asp:ListItem>
@@ -259,7 +331,7 @@
                     </div>
                     <div class="rowItems">
                         <asp:DropDownList ID="DropDownList4" runat="server" CssClass="ddDesc form-control text-center">
-                            <asp:ListItem>Peanut Butter</asp:ListItem>
+                            <asp:ListItem>Select Category</asp:ListItem><asp:ListItem>Select Category</asp:ListItem><asp:ListItem>Peanut Butter</asp:ListItem>
                             <asp:ListItem>Coffee</asp:ListItem>
                             <asp:ListItem>Pastry</asp:ListItem>
                             <asp:ListItem>Beverage</asp:ListItem>
@@ -289,7 +361,7 @@
                     </div>
                     <div class="rowItems">
                         <asp:DropDownList ID="DropDownList5" runat="server" CssClass="ddDesc form-control text-center">
-                            <asp:ListItem>Peanut Butter</asp:ListItem>
+                            <asp:ListItem>Select Category</asp:ListItem><asp:ListItem>Select Category</asp:ListItem><asp:ListItem>Peanut Butter</asp:ListItem>
                             <asp:ListItem>Coffee</asp:ListItem>
                             <asp:ListItem>Pastry</asp:ListItem>
                             <asp:ListItem>Beverage</asp:ListItem>
@@ -319,7 +391,7 @@
                     </div>
                     <div class="rowItems">
                         <asp:DropDownList ID="DropDownList6" runat="server" CssClass="ddDesc form-control text-center">
-                            <asp:ListItem>Peanut Butter</asp:ListItem>
+                            <asp:ListItem>Select Category</asp:ListItem><asp:ListItem>Select Category</asp:ListItem><asp:ListItem>Peanut Butter</asp:ListItem>
                             <asp:ListItem>Coffee</asp:ListItem>
                             <asp:ListItem>Pastry</asp:ListItem>
                             <asp:ListItem>Beverage</asp:ListItem>
@@ -349,7 +421,7 @@
                     </div>
                     <div class="rowItems">
                         <asp:DropDownList ID="DropDownList7" runat="server" CssClass="ddDesc form-control text-center">
-                            <asp:ListItem>Peanut Butter</asp:ListItem>
+                            <asp:ListItem>Select Category</asp:ListItem><asp:ListItem>Select Category</asp:ListItem><asp:ListItem>Peanut Butter</asp:ListItem>
                             <asp:ListItem>Coffee</asp:ListItem>
                             <asp:ListItem>Pastry</asp:ListItem>
                             <asp:ListItem>Beverage</asp:ListItem>
@@ -379,7 +451,7 @@
                     </div>
                     <div class="rowItems">
                         <asp:DropDownList ID="DropDownList8" runat="server" CssClass="ddDesc form-control text-center">
-                            <asp:ListItem>Peanut Butter</asp:ListItem>
+                            <asp:ListItem>Select Category</asp:ListItem><asp:ListItem>Select Category</asp:ListItem><asp:ListItem>Peanut Butter</asp:ListItem>
                             <asp:ListItem>Coffee</asp:ListItem>
                             <asp:ListItem>Pastry</asp:ListItem>
                             <asp:ListItem>Beverage</asp:ListItem>
@@ -409,7 +481,7 @@
                     </div>
                     <div class="rowItems">
                         <asp:DropDownList ID="DropDownList9" runat="server" CssClass="ddDesc form-control text-center">
-                            <asp:ListItem>Peanut Butter</asp:ListItem>
+                            <asp:ListItem>Select Category</asp:ListItem><asp:ListItem>Select Category</asp:ListItem><asp:ListItem>Peanut Butter</asp:ListItem>
                             <asp:ListItem>Coffee</asp:ListItem>
                             <asp:ListItem>Pastry</asp:ListItem>
                             <asp:ListItem>Beverage</asp:ListItem>
@@ -439,7 +511,7 @@
                     </div>
                     <div class="rowItems">
                         <asp:DropDownList ID="DropDownList10" runat="server" CssClass="ddDesc form-control text-center">
-                            <asp:ListItem>Peanut Butter</asp:ListItem>
+                            <asp:ListItem>Select Category</asp:ListItem><asp:ListItem>Select Category</asp:ListItem><asp:ListItem>Peanut Butter</asp:ListItem>
                             <asp:ListItem>Coffee</asp:ListItem>
                             <asp:ListItem>Pastry</asp:ListItem>
                             <asp:ListItem>Beverage</asp:ListItem>
@@ -469,7 +541,7 @@
                     </div>
                     <div class="rowItems">
                         <asp:DropDownList ID="DropDownList11" runat="server" CssClass="ddDesc form-control text-center">
-                            <asp:ListItem>Peanut Butter</asp:ListItem>
+                            <asp:ListItem>Select Category</asp:ListItem><asp:ListItem>Select Category</asp:ListItem><asp:ListItem>Peanut Butter</asp:ListItem>
                             <asp:ListItem>Coffee</asp:ListItem>
                             <asp:ListItem>Pastry</asp:ListItem>
                             <asp:ListItem>Beverage</asp:ListItem>
@@ -499,7 +571,7 @@
                     </div>
                     <div class="rowItems">
                         <asp:DropDownList ID="DropDownList12" runat="server" CssClass="ddDesc form-control text-center">
-                            <asp:ListItem>Peanut Butter</asp:ListItem>
+                            <asp:ListItem>Select Category</asp:ListItem><asp:ListItem>Select Category</asp:ListItem><asp:ListItem>Peanut Butter</asp:ListItem>
                             <asp:ListItem>Coffee</asp:ListItem>
                             <asp:ListItem>Pastry</asp:ListItem>
                             <asp:ListItem>Beverage</asp:ListItem>
@@ -529,7 +601,7 @@
                     </div>
                     <div class="rowItems">
                         <asp:DropDownList ID="DropDownList13" runat="server" CssClass="ddDesc form-control text-center">
-                            <asp:ListItem>Peanut Butter</asp:ListItem>
+                            <asp:ListItem>Select Category</asp:ListItem><asp:ListItem>Select Category</asp:ListItem><asp:ListItem>Peanut Butter</asp:ListItem>
                             <asp:ListItem>Coffee</asp:ListItem>
                             <asp:ListItem>Pastry</asp:ListItem>
                             <asp:ListItem>Beverage</asp:ListItem>
@@ -559,7 +631,7 @@
                     </div>
                     <div class="rowItems">
                         <asp:DropDownList ID="DropDownList14" runat="server" CssClass="ddDesc form-control text-center">
-                            <asp:ListItem>Peanut Butter</asp:ListItem>
+                            <asp:ListItem>Select Category</asp:ListItem><asp:ListItem>Select Category</asp:ListItem><asp:ListItem>Peanut Butter</asp:ListItem>
                             <asp:ListItem>Coffee</asp:ListItem>
                             <asp:ListItem>Pastry</asp:ListItem>
                             <asp:ListItem>Beverage</asp:ListItem>
@@ -589,7 +661,7 @@
                     </div>
                     <div class="rowItems">
                         <asp:DropDownList ID="DropDownList15" runat="server" CssClass="ddDesc form-control text-center">
-                            <asp:ListItem>Peanut Butter</asp:ListItem>
+                            <asp:ListItem>Select Category</asp:ListItem><asp:ListItem>Select Category</asp:ListItem><asp:ListItem>Peanut Butter</asp:ListItem>
                             <asp:ListItem>Coffee</asp:ListItem>
                             <asp:ListItem>Pastry</asp:ListItem>
                             <asp:ListItem>Beverage</asp:ListItem>
@@ -619,7 +691,7 @@
                     </div>
                     <div class="rowItems">
                         <asp:DropDownList ID="DropDownList16" runat="server" CssClass="ddDesc form-control text-center">
-                            <asp:ListItem>Peanut Butter</asp:ListItem>
+                            <asp:ListItem>Select Category</asp:ListItem><asp:ListItem>Peanut Butter</asp:ListItem>
                             <asp:ListItem>Coffee</asp:ListItem>
                             <asp:ListItem>Pastry</asp:ListItem>
                             <asp:ListItem>Beverage</asp:ListItem>
@@ -649,7 +721,7 @@
                     </div>
                     <div class="rowItems">
                         <asp:DropDownList ID="DropDownList17" runat="server" CssClass="ddDesc form-control text-center">
-                            <asp:ListItem>Peanut Butter</asp:ListItem>
+                            <asp:ListItem>Select Category</asp:ListItem><asp:ListItem>Peanut Butter</asp:ListItem>
                             <asp:ListItem>Coffee</asp:ListItem>
                             <asp:ListItem>Pastry</asp:ListItem>
                             <asp:ListItem>Beverage</asp:ListItem>
@@ -679,7 +751,7 @@
                     </div>
                     <div class="rowItems">
                         <asp:DropDownList ID="DropDownList18" runat="server" CssClass="ddDesc form-control text-center">
-                            <asp:ListItem>Peanut Butter</asp:ListItem>
+                            <asp:ListItem>Select Category</asp:ListItem><asp:ListItem>Peanut Butter</asp:ListItem>
                             <asp:ListItem>Coffee</asp:ListItem>
                             <asp:ListItem>Pastry</asp:ListItem>
                             <asp:ListItem>Beverage</asp:ListItem>
@@ -709,7 +781,7 @@
                     </div>
                     <div class="rowItems">
                         <asp:DropDownList ID="DropDownList19" runat="server" CssClass="ddDesc form-control text-center">
-                            <asp:ListItem>Peanut Butter</asp:ListItem>
+                            <asp:ListItem>Select Category</asp:ListItem><asp:ListItem>Peanut Butter</asp:ListItem>
                             <asp:ListItem>Coffee</asp:ListItem>
                             <asp:ListItem>Pastry</asp:ListItem>
                             <asp:ListItem>Beverage</asp:ListItem>
@@ -729,47 +801,10 @@
                     </div>
                 </div>
             </div>
-            <div class="itemRow">
-                <div class="row d-flex additemrow justify-content-between">
-                    <div class="rowItems">
-                        <asp:LinkButton runat="server" ID="LinkButton20" Text="<i class='fas fa-camera addItemImg'></i>" CssClass="" />
-                    </div>
-                    <div class="rowItems">
-                        <asp:TextBox ID="TextBox77" runat="server" Width="150px" CssClass="text-center form-control borderControl">039423959324</asp:TextBox>
-                    </div>
-                    <div class="rowItems">
-                        <asp:DropDownList ID="DropDownList20" runat="server" CssClass="ddDesc form-control text-center">
-                            <asp:ListItem>Peanut Butter</asp:ListItem>
-                            <asp:ListItem>Coffee</asp:ListItem>
-                            <asp:ListItem>Pastry</asp:ListItem>
-                            <asp:ListItem>Beverage</asp:ListItem>
-                        </asp:DropDownList>
-                    </div>
-                    <div class="rowItems">
-                        <asp:TextBox ID="TextBox78" runat="server" TextMode="Number" Width="80px" CssClass="text-center form-control borderControl"></asp:TextBox>
-                    </div>
-                    <div class="rowItems">
-                        <asp:TextBox ID="TextBox79" runat="server" TextMode="Number" Width="80px" CssClass="text-center form-control borderControl"></asp:TextBox>
-                    </div>
-                    <div class="rowItems">
-                        <asp:TextBox ID="TextBox80" runat="server" Width="80px" CssClass="text-center form-control borderControl"></asp:TextBox>
-                    </div>
-                    <div class="rowItems">
-                        <asp:Button ID="Button20" Text="Remove" runat="server" Class="btn btn-primary" />
-                    </div>
-                </div>
-            </div>
+
         </div>
         </div>
     <hr />
 
-    <div class="container" id="botPortion">
-        <div class="row d-flex justify-content-around">
-            <asp:Button ID="btnSubmit" runat="server" Text="Submit Entry" CssClass="submitItemBtn btn btn-primary" />
-            <div>
-                <asp:Label ID="lblTotalQuantDesc" runat="server" Text="Total Quantity: "></asp:Label>
-                <asp:Label ID="lblTotalQuant" runat="server" Text="84" Font-Bold="True"></asp:Label>
-            </div>
-        </div>
-    </div>
+    
 </asp:Content>
