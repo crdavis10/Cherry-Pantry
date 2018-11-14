@@ -22,7 +22,7 @@
         </div>
     </div>
 </div>
-        <hr />
+
 <!---->
 	
 	
@@ -49,6 +49,47 @@
 		</div>
 	</div>
 </div>
+
+<!---->
+<div class="row">
+
+	<br />
+	<div class="col-2">
+		<div class="col-lg-9 col-md-8">
+			<asp:TextBox ID="txtval9" runat="server" CssClass="form-control"></asp:TextBox>
+		</div>
+	</div>
+
+    <div class="col-2">
+        <div class="col-lg-9 col-md-8">
+            <asp:TextBox ID="TextBox1" runat="server" CssClass="form-control"></asp:TextBox>
+        </div>
+    </div>
+
+	<div class="col-2">
+		<div class="col-lg-9 col-md-8">
+			<asp:TextBox ID="txtval10" runat="server" CssClass="form-control"></asp:TextBox>
+		</div>
+	</div>
+
+	<div class="col-2">
+		<div class="col-lg-9 col-md-8">
+			<asp:DropDownList class="btn btn-secondary dropdown-toggle" ID="DropDownList1" runat="server">
+				<asp:ListItem Enabled="true" Text="Select Role" Value="-1"></asp:ListItem>
+				<asp:ListItem Text="Admin" Value="1"></asp:ListItem>
+				<asp:ListItem Text="Volunteer" Value="2"></asp:ListItem>
+			</asp:DropDownList>
+		</div>
+	</div>
+
+	<div class="col-2">
+		<div class="col-lg-9 col-md-8">
+			<asp:Button ID="Button2" Text="Save" runat="server" Class="btn btn-primary" />
+		</div>
+	</div>
+
+</div>
+<hr />
 
 <!---->
 <div class="row">
@@ -130,45 +171,5 @@
 	</div>
 </div>
 
-<!---->
-<hr />
-<div class="row">
-
-	<br />
-	<div class="col-2">
-		<div class="col-lg-9 col-md-8">
-			<asp:TextBox ID="txtval9" runat="server" CssClass="form-control"></asp:TextBox>
-		</div>
-	</div>
-
-    <div class="col-2">
-        <div class="col-lg-9 col-md-8">
-            <asp:TextBox ID="TextBox1" runat="server" CssClass="form-control"></asp:TextBox>
-        </div>
-    </div>
-
-	<div class="col-2">
-		<div class="col-lg-9 col-md-8">
-			<asp:TextBox ID="txtval10" runat="server" CssClass="form-control"></asp:TextBox>
-		</div>
-	</div>
-
-	<div class="col-2">
-		<div class="col-lg-9 col-md-8">
-			<asp:DropDownList class="btn btn-secondary dropdown-toggle" ID="DropDownList1" runat="server">
-				<asp:ListItem Enabled="true" Text="Select Role" Value="-1"></asp:ListItem>
-				<asp:ListItem Text="Admin" Value="1"></asp:ListItem>
-				<asp:ListItem Text="Volunteer" Value="2"></asp:ListItem>
-			</asp:DropDownList>
-		</div>
-	</div>
-
-	<div class="col-2">
-		<div class="col-lg-9 col-md-8">
-			<asp:Button ID="Button2" Text="Save" runat="server" Class="btn btn-primary" />
-		</div>
-	</div>
-
-</div>
 </div>
 </asp:content>
