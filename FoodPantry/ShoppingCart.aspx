@@ -13,6 +13,7 @@
   
 <div class="button">
       <asp:Button ID="btnScanNew" Text="Scan New Item" runat="server" Class="btn btn-primary" />
+    <asp:Button ID="Button2" Text="Add Item Manually" runat="server" Class="btn btn-primary" />
 </div>
       
 <div class="row table-container">
