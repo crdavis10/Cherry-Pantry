@@ -27,7 +27,8 @@
                     <th>&nbsp;</th>
                     <th>
                         <asp:Label ID="lblTotal" runat="server" Text="Total: 6"></asp:Label></th>
-                    <th class="button-group"><asp:Button ID="btnOverride" Text="Override" runat="server" Class="btn btn-primary" /><asp:Button ID="btnCheckout" Text="Checkout" runat="server" Class="btn btn-primary" /></th>
+                    <th class="button-group checkout-buttons"><asp:Button ID="btnOverride" Text="Override" runat="server" Class="btn btn-primary" />
+                        <asp:Button ID="btnCheckout" Text="Checkout" runat="server" Class="btn btn-primary" /></th>
                 </tr>
                 <tr>
                     <th>&nbsp;</th>
