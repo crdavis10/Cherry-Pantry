@@ -103,13 +103,13 @@ namespace FoodPantry {
         protected global::System.Web.UI.WebControls.Label lblDesc;
         
         /// <summary>
-        /// txtDesc control.
+        /// txtCategory control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtDesc;
+        protected global::System.Web.UI.WebControls.TextBox txtCategory;
         
         /// <summary>
         /// lblQuantity control.

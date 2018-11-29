@@ -21,13 +21,13 @@ namespace FoodPantry
             {
                 txtUpc.ReadOnly = false;
                 txtWeight.ReadOnly = false;
-                txtDesc.ReadOnly = false;
+                txtCategory.ReadOnly = false;
                 txtPoint.ReadOnly = false;
                 txtQuantity.ReadOnly = false;
 
                 txtUpc.Style[HtmlTextWriterStyle.BorderStyle] = "solid";
                 txtWeight.BorderStyle = BorderStyle.Solid;
-                txtDesc.BorderStyle = BorderStyle.Solid;
+                txtCategory.BorderStyle = BorderStyle.Solid;
                 txtPoint.BorderStyle = BorderStyle.Solid;
                 txtQuantity.BorderStyle = BorderStyle.Solid;
 

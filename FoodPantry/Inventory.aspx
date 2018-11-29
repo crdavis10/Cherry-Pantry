@@ -65,7 +65,7 @@
                     </div>
                     <div class="row d-flex justify-content-between itemRow">
                         <asp:Label ID="lblDesc" runat="server" Text="Category: "></asp:Label>
-                        <asp:TextBox ID="txtDesc" runat="server"  CssClass="itemText" ReadOnly="True">Peanut Butter</asp:TextBox>
+                        <asp:TextBox ID="txtCategory" runat="server"  CssClass="itemText" ReadOnly="True">Peanut Butter</asp:TextBox>
                     </div>
                     <div class="row d-flex justify-content-between itemRow">
                         <asp:Label ID="lblQuantity" runat="server" Text="Quantity: "></asp:Label>
