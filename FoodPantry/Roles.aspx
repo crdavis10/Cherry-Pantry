@@ -2,8 +2,27 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 <link rel="stylesheet" type="text/css" href="css/style.css" />
+<script runat="server">
+	protected void Button1_Click(object sender, System.EventArgs e)
+	{
+		TextBox1.Visible = true;
+		txtval9.Visible = true;
+		txtval10.Visible = true;
+		DropDownList1.Visible = true;
+		Button2.Visible = true;
 
-    <div class="container">
+
+	}
+	protected void Button2_Click(object sender, System.EventArgs e)
+	{
+		TextBox1.Visible = false;
+		txtval9.Visible = false;
+		txtval10.Visible = false;
+		DropDownList1.Visible = false;
+		Button2.Visible = false;
+	}
+</script>
+<div class="container">
 <div class="row">
     <div class="col-auto">
         <div class="col-lg-9 col-md-4 control-label">
@@ -11,14 +30,14 @@
         </div>
         <div class="usertypediv">
             <asp:Label ID="Label16" runat="server" Text="User Status: "></asp:Label>
-            <asp:DropDownList ID="ddlFilter" runat="server"  CssClass="form-control inventoryddl">
+            <asp:DropDownList ID="ddlFilter" AutoPostBack="true" OnSelectedIndexChange="Inactive" runat="server" CssClass="form-control inventoryddl">
                 <asp:ListItem>Active</asp:ListItem>
                 <asp:ListItem>Inactive</asp:ListItem>
 
             </asp:DropDownList>
                 </div>
         <div class="col-lg-9 col-md-8">
-            <asp:Button ID="Button1" Text="Add" runat="server" Class="btn btn-primary" />
+            <asp:Button ID="Button1" Text="Add" OnClick="Button1_Click" runat="server" Class="btn btn-primary" />
         </div>
     </div>
 </div>
@@ -56,25 +75,25 @@
 	<br />
 	<div class="col-2">
 		<div class="col-lg-9 col-md-8">
-			<asp:TextBox ID="txtval9" runat="server" CssClass="form-control"></asp:TextBox>
+			<asp:TextBox ID="txtval9" visible="false" runat="server" CssClass="form-control"></asp:TextBox>
 		</div>
 	</div>
 
     <div class="col-2">
         <div class="col-lg-9 col-md-8">
-            <asp:TextBox ID="TextBox1" runat="server" CssClass="form-control"></asp:TextBox>
+            <asp:TextBox ID="TextBox1" visible="false" runat="server" CssClass="form-control"></asp:TextBox>
         </div>
     </div>
 
 	<div class="col-2">
 		<div class="col-lg-9 col-md-8">
-			<asp:TextBox ID="txtval10" runat="server" CssClass="form-control"></asp:TextBox>
+			<asp:TextBox ID="txtval10" visible="false" runat="server" CssClass="form-control"></asp:TextBox>
 		</div>
 	</div>
 
 	<div class="col-2">
 		<div class="col-lg-9 col-md-8">
-			<asp:DropDownList class="btn btn-secondary dropdown-toggle" ID="DropDownList1" runat="server">
+			<asp:DropDownList class="btn btn-secondary dropdown-toggle" visible="false" ID="DropDownList1" runat="server">
 				<asp:ListItem Enabled="true" Text="Select Role" Value="-1"></asp:ListItem>
 				<asp:ListItem Text="Admin" Value="1"></asp:ListItem>
 				<asp:ListItem Text="Volunteer" Value="2"></asp:ListItem>
@@ -84,7 +103,7 @@
 
 	<div class="col-2">
 		<div class="col-lg-9 col-md-8">
-			<asp:Button ID="Button2" Text="Save" runat="server" Class="btn btn-primary" />
+			<asp:Button ID="Button2" visible="false" Text="Save" OnClick="Button2_Click" runat="server" Class="btn btn-primary" />
 		</div>
 	</div>
 
