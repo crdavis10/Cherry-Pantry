@@ -67,16 +67,21 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AddItemReview.aspx" />
     <Content Include="AddItem.aspx" />
     <Content Include="css\main.css" />
     <Content Include="css\receipt.css" />
+    <Content Include="css\scan.css" />
     <Content Include="css\style.css" />
     <Content Include="css\styleRachael.css" />
     <Content Include="Donation.aspx" />
     <Content Include="Donor.aspx" />
     <Content Include="Export.aspx" />
+    <Content Include="images\barcode scan.png" />
     <Content Include="images\cherrypantry.png" />
     <Content Include="images\cherrypantrycherry.png" />
+    <Content Include="images\scan item.jpg" />
+    <Content Include="InventoryEmpty.aspx" />
     <Content Include="js\AddItem.js" />
     <Content Include="Login.aspx" />
     <Content Include="LoginColin.aspx" />
@@ -99,11 +104,19 @@
     <Content Include="Receipt.aspx" />
     <Content Include="js\Receipt.js" />
     <Content Include="Roles.aspx" />
+    <Content Include="Scan.aspx" />
     <Content Include="ShoppingCart.aspx" />
     <Content Include="ShoppingCart2.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddItemReview.aspx.cs">
+      <DependentUpon>AddItemReview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddItemReview.aspx.designer.cs">
+      <DependentUpon>AddItemReview.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AddItem.aspx.cs">
       <DependentUpon>AddItem.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -138,6 +151,13 @@
     </Compile>
     <Compile Include="FoodPantry.Master.designer.cs">
       <DependentUpon>FoodPantry.Master</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryEmpty.aspx.cs">
+      <DependentUpon>InventoryEmpty.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InventoryEmpty.aspx.designer.cs">
+      <DependentUpon>InventoryEmpty.aspx</DependentUpon>
     </Compile>
     <Compile Include="Inventory.aspx.cs">
       <DependentUpon>Inventory.aspx</DependentUpon>
@@ -174,6 +194,13 @@
     </Compile>
     <Compile Include="Roles.aspx.designer.cs">
       <DependentUpon>Roles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Scan.aspx.cs">
+      <DependentUpon>Scan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Scan.aspx.designer.cs">
+      <DependentUpon>Scan.aspx</DependentUpon>
     </Compile>
     <Compile Include="ShoppingCart.aspx.cs">
       <DependentUpon>ShoppingCart.aspx</DependentUpon>

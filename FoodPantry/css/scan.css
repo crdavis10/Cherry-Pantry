@@ -1,0 +1,17 @@
+﻿body {
+}
+
+.barcode_image{
+    width: 80%;
+    height: 80%;
+}
+
+.scanned_container{
+    border:3px solid #a41e35;
+    border-radius:5px;
+    margin-bottom:50px;
+}
+
+.item_Quantity{
+    margin:0 auto;
+}
