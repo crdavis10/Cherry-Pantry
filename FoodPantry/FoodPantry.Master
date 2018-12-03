@@ -35,7 +35,7 @@
                 <a class="nav-link" href="Inventory.aspx">Inventory</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="ShoppingCart.aspx">Checkout</a>
+                <a class="nav-link" href="ShoppingCart2.aspx">Checkout</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="Export.aspx">Export</a>

@@ -100,6 +100,7 @@
     <Content Include="js\Receipt.js" />
     <Content Include="Roles.aspx" />
     <Content Include="ShoppingCart.aspx" />
+    <Content Include="ShoppingCart2.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -180,6 +181,13 @@
     </Compile>
     <Compile Include="ShoppingCart.aspx.designer.cs">
       <DependentUpon>ShoppingCart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShoppingCart2.aspx.cs">
+      <DependentUpon>ShoppingCart2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShoppingCart2.aspx.designer.cs">
+      <DependentUpon>ShoppingCart2.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup />

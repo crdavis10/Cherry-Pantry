@@ -106,9 +106,9 @@
                 <div class="col-md-3">
                     <asp:Label ID="Label1" runat="server" CssClass="chkContainerText">
                    Order Number: 40 <br />
-                   Description: Soda, Bread, Beans, Coffee <br />
-                   Order Quantity: 5 <br />
-                   Total Points: 16 <br />
+                   Description: Peanut Butter <br />
+                   Order Quantity: 2 <br />
+                   Total Points: 2 <br />
                     </asp:Label> 
                     <br />
                  <!--   <asp:Button ID="btnShowDetails" OnClientClick="showRDetails(); return false;" runat="server" CssClass="btn btn-primary" Text="Show Details"/> -->

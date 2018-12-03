@@ -13,5 +13,21 @@ namespace WebApplication1
         {
 
         }
+
+        protected void btnRemove_Click(object sender, EventArgs e)
+        {
+            img1.Visible = false;
+            Label1.Visible = false;
+            Label2.Visible = false;
+            Label3.Visible = false;
+            txtQuantity.Visible = false;
+            lblTotal.Text = "Total: 0";
+
+        }
+
+        protected void btnCheckout_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Receipt.aspx");
+        }
     }
 }
