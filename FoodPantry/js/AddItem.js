@@ -40,3 +40,21 @@ function viewportclick() {
     container.removeChild(document.getElementById('cameraicon'));
     
 }
+
+function thumbnailclick2() {
+    document.getElementById("alertpopup2").style.display = "block";
+    document.getElementById("alertpopup2").style.width = "40%";
+    document.getElementById("alertpopup2").style.cursor = "url";
+    document.getElementById("barcodeimg").src = '/images/barkthin barcode.jpg';
+
+    var src = '/images/barkthin.jpg';
+    var container = document.getElementById('thumbnail_Place2');
+    var img = document.createElement('img');
+    img.src = src;
+    img.className = 'thumb';
+    img.style.width = '30px';
+    container.appendChild(img);
+    container.removeChild(document.getElementById('cameraicon2'));
+
+    document.getElementsByClassName('itemUPC2');
+}

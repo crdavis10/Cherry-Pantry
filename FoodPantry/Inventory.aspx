@@ -15,7 +15,7 @@
 
     <div class="container  topNav">
         <div class="row d-flex justify-content-around">
-            <asp:Button ID="btnAdd" runat="server" Text="Add New Items" Height="40px" Width="150px" CssClass="myBtn align-self-end btn btn-primary" PostBackUrl="~/AddItem.aspx"/>
+            <asp:Button ID="btnAdd" runat="server" Text="Add New Items" Height="40px" Width="150px" CssClass="myBtn align-self-end btn btn-primary" PostBackUrl="~/AddItemInitial.aspx"/>
             <div>
             <asp:Label ID="lblUpcSearch" runat="server" Text="UPC Search: "></asp:Label>
             <div class="input-group add-on">
@@ -71,10 +71,7 @@
                         <asp:Label ID="lblQuantity" runat="server" Text="Quantity: "></asp:Label>
                         <asp:TextBox ID="txtQuantity" runat="server" CssClass="itemText" ReadOnly="True">30</asp:TextBox>
                     </div>
-                    <div class="row d-flex justify-content-between itemRow">
-                        <asp:Label ID="lblWeight" runat="server" Text="Weight: "></asp:Label>
-                        <asp:TextBox ID="txtWeight" runat="server" CssClass="itemText" ReadOnly="True">16.3 oz</asp:TextBox>
-                    </div>
+
                     <div class="row d-flex justify-content-between itemRow">
                         <asp:Label ID="lblPoint" runat="server" Text="Point: "></asp:Label>
                         <asp:TextBox ID="txtPoint" runat="server" CssClass="itemText" ReadOnly="True">2</asp:TextBox>
@@ -107,10 +104,7 @@
                         <asp:Label ID="Label3" runat="server" Text="Quantity: "></asp:Label>
                         <asp:TextBox ID="TextBox3" runat="server" CssClass="itemText" ReadOnly="True">5</asp:TextBox>
                     </div>
-                    <div class="row d-flex justify-content-between itemRow">
-                        <asp:Label ID="Label4" runat="server" Text="Weight: "></asp:Label>
-                        <asp:TextBox ID="TextBox4" runat="server" CssClass="itemText" ReadOnly="True">30 oz</asp:TextBox>
-                    </div>
+
                     <div class="row d-flex justify-content-between itemRow">
                         <asp:Label ID="Label5" runat="server" Text="Point: "></asp:Label>
                         <asp:TextBox ID="TextBox5" runat="server" CssClass="itemText" ReadOnly="True">3</asp:TextBox>
@@ -143,10 +137,7 @@
                         <asp:Label ID="Label8" runat="server" Text="Quantity: "></asp:Label>
                         <asp:TextBox ID="TextBox8" runat="server" CssClass="itemText" ReadOnly="True">31</asp:TextBox>
                     </div>
-                    <div class="row d-flex justify-content-between itemRow">
-                        <asp:Label ID="Label9" runat="server" Text="Weight: "></asp:Label>
-                        <asp:TextBox ID="TextBox9" runat="server" CssClass="itemText" ReadOnly="True">9 oz</asp:TextBox>
-                    </div>
+
                     <div class="row d-flex justify-content-between itemRow">
                         <asp:Label ID="Label10" runat="server" Text="Point: "></asp:Label>
                         <asp:TextBox ID="TextBox10" runat="server" CssClass="itemText" ReadOnly="True">1</asp:TextBox>
@@ -179,10 +170,7 @@
                         <asp:Label ID="Label13" runat="server" Text="Quantity: "></asp:Label>
                         <asp:TextBox ID="TextBox13" runat="server" CssClass="itemText" ReadOnly="True">12</asp:TextBox>
                     </div>
-                    <div class="row d-flex justify-content-between itemRow">
-                        <asp:Label ID="Label14" runat="server" Text="Weight: "></asp:Label>
-                        <asp:TextBox ID="TextBox14" runat="server" CssClass="itemText" ReadOnly="True">1 liter</asp:TextBox>
-                    </div>
+    
                     <div class="row d-flex justify-content-between itemRow">
                         <asp:Label ID="Label15" runat="server" Text="Point: "></asp:Label>
                         <asp:TextBox ID="TextBox15" runat="server" CssClass="itemText" ReadOnly="True">2</asp:TextBox>

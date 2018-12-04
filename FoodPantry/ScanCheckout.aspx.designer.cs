@@ -10,7 +10,7 @@
 namespace FoodPantry {
     
     
-    public partial class Scan {
+    public partial class ScanCheckout {
         
         /// <summary>
         /// btnComplete control.

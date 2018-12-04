@@ -79,6 +79,8 @@
     <Content Include="Donor.aspx" />
     <Content Include="Export.aspx" />
     <Content Include="images\barcode scan.png" />
+    <Content Include="images\barkthin barcode.jpg" />
+    <Content Include="images\barkthin.jpg" />
     <Content Include="images\cherrypantry.png" />
     <Content Include="images\cherrypantrycherry.png" />
     <Content Include="images\scan item.jpg" />
@@ -106,6 +108,7 @@
     <Content Include="js\Receipt.js" />
     <Content Include="Roles.aspx" />
     <Content Include="Scan.aspx" />
+    <Content Include="ScanCheckout.aspx" />
     <Content Include="ShoppingCart.aspx" />
     <Content Include="ShoppingCart2.aspx" />
     <Content Include="Web.config" />
@@ -209,6 +212,13 @@
     </Compile>
     <Compile Include="Scan.aspx.designer.cs">
       <DependentUpon>Scan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScanCheckout.aspx.cs">
+      <DependentUpon>ScanCheckout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScanCheckout.aspx.designer.cs">
+      <DependentUpon>ScanCheckout.aspx</DependentUpon>
     </Compile>
     <Compile Include="ShoppingCart.aspx.cs">
       <DependentUpon>ShoppingCart.aspx</DependentUpon>

@@ -1,11 +1,9 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/FoodPantry.Master" AutoEventWireup="true" CodeBehind="Scan.aspx.cs" Inherits="FoodPantry.Scan" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/FoodPantry.Master" AutoEventWireup="true" CodeBehind="ScanCheckout.aspx.cs" Inherits="FoodPantry.ScanCheckout" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-        <link rel="stylesheet" href="css/scan.css" />
-        <script src="js/AddItem.js"></script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-   <div class="container">
+     <div class="container">
         <div class="row header-container">
     <div class="col-md-12">
         <div class="control-label">
@@ -77,7 +75,7 @@
              <div class="itemRow">
                 <div class="row d-flex additemrow justify-content-around">
                     <div class="rowItems">
-                        <a onclick="thumbnailclick2(); return false;" style="cursor:pointer;"><span id="thumbnail_Place2"><i id="cameraicon2" class="fas fa-camera addItemImg" style="color:#a41e35;"></i></span></a>
+                        <a onclick="thumbnailclick2(); return false;" style="cursor:pointer;"><span id="thumbnail_Place2"><img style="width:30px;" src="images/scan item.jpg"/></span></a>
                     </div>
                     <div class="rowItems">
                         <asp:TextBox ID="rTextBox82" runat="server" Width="150px" CssClass="text-center form-control borderControl itemUPC2"></asp:TextBox>
@@ -113,8 +111,7 @@
                         <asp:TextBox ID="rtxtUPC" runat="server" Width="150px" CssClass="text-center form-control borderControl noborder">07572048127</asp:TextBox>
                     </div>
                     <div class="rowItems">
-                        <asp:DropDownList ID="rddlCategory" runat="server" CssClass="ddDesc form-control text-center">
-                            <asp:ListItem>Select Category</asp:ListItem>
+                        <asp:DropDownList ID="rddlCategory" runat="server" CssClass="ddDesc form-control text-center noborder">
                             <asp:ListItem>Beverage</asp:ListItem>
                             <asp:ListItem>Peanut Butter</asp:ListItem>
                             <asp:ListItem>Coffee</asp:ListItem>
@@ -122,10 +119,10 @@
                         </asp:DropDownList>
                     </div>
                     <div class="rowItems">
-                        <asp:TextBox ID="rtxtQuant" runat="server" TextMode="Number" Width="80px" CssClass="text-center form-control borderControl"></asp:TextBox>
+                        <asp:TextBox ID="rtxtQuant" runat="server" TextMode="Number" Width="80px" CssClass="text-center form-control borderControl noborder">1</asp:TextBox>
                     </div>
                     <div class="rowItems">
-                        <asp:TextBox ID="rtxtPoint" runat="server" TextMode="Number" Width="80px" CssClass="text-center form-control borderControl"></asp:TextBox>
+                        <asp:TextBox ID="rtxtPoint" runat="server" TextMode="Number" Width="80px" CssClass="text-center form-control borderControl noborder">1</asp:TextBox>
                     </div>
                     <div class="rowItems">
                         <button type="button" id="removebtn2" class="addItemBtn btn btn-primary"  onclick="removepanel2(); return false; ">Remove</button>
@@ -142,4 +139,5 @@
 
         
     </div>
+
 </asp:Content>
