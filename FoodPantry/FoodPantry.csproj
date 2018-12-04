@@ -73,11 +73,13 @@
     <Content Include="css\style.css" />
     <Content Include="css\styleRachael.css" />
     <Content Include="Donation.aspx" />
+    <Content Include="Donation2.aspx" />
     <Content Include="Donor.aspx" />
     <Content Include="Export.aspx" />
     <Content Include="images\cherrypantry.png" />
     <Content Include="images\cherrypantrycherry.png" />
     <Content Include="js\AddItem.js" />
+    <Content Include="js\Donation.js" />
     <Content Include="Login.aspx" />
     <Content Include="LoginColin.aspx" />
     <Content Include="packages.config" />
@@ -117,6 +119,13 @@
     </Compile>
     <Compile Include="Donation.aspx.designer.cs">
       <DependentUpon>Donation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Donation2.aspx.cs">
+      <DependentUpon>Donation2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Donation2.aspx.designer.cs">
+      <DependentUpon>Donation2.aspx</DependentUpon>
     </Compile>
     <Compile Include="Donor.aspx.cs">
       <DependentUpon>Donor.aspx</DependentUpon>
