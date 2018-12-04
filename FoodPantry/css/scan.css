@@ -2,17 +2,25 @@
 }
 
 .barcode_image{
-    width: 80%;
+    width: 45vh;
     height: 80%;
 }
 
 .scanned_container{
     border:3px solid #a41e35;
     border-radius:5px;
-    margin-bottom:50px;
+    margin-bottom:10px;
 }
 
 .item_Quantity{
     margin:0 auto;
 }
 
+.addItemImg:hover{
+    color:#222;
+}
+
+#alertpopup{
+    display:none;
+    width:100px;
+}

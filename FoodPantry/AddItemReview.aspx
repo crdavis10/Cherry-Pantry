@@ -8,7 +8,7 @@
         <div class="row header-container">
     <div class="col-md-12">
         <div class="control-label">
-            <h1 class="cart-title">Add Inventory</h1>
+            <h1 class="cart-title">Review</h1>
         </div>
     </div>
 </div>
@@ -98,7 +98,7 @@
             <div class="itemRow">
                 <div class="row d-flex additemrow justify-content-between">
                     <div class="rowItems">
-                        <asp:LinkButton runat="server" ID="rbtnCamera" Text="<i class='fas fa-camera addItemImg'></i>" CssClass="" />
+                        <img src="images/scan item.jpg" class="thumb" style="width:30px;"/>
                     </div>
                     <div class="rowItems">
                         <asp:TextBox ID="rtxtUPC" runat="server" Width="150px" CssClass="text-center form-control borderControl noborder">07572048127</asp:TextBox>

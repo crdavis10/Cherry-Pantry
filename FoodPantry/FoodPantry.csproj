@@ -67,6 +67,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AddItemInitial.aspx" />
     <Content Include="AddItemReview.aspx" />
     <Content Include="AddItem.aspx" />
     <Content Include="css\main.css" />
@@ -110,6 +111,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddItemInitial.aspx.cs">
+      <DependentUpon>AddItemInitial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddItemInitial.aspx.designer.cs">
+      <DependentUpon>AddItemInitial.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AddItemReview.aspx.cs">
       <DependentUpon>AddItemReview.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

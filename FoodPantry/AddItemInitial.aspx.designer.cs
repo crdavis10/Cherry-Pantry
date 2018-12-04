@@ -10,7 +10,7 @@
 namespace FoodPantry {
     
     
-    public partial class AddItemReview1 {
+    public partial class AddItemInitial {
         
         /// <summary>
         /// btnAddItem control.
@@ -92,86 +92,5 @@ namespace FoodPantry {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label rLabel7;
-        
-        /// <summary>
-        /// rLinkButton21 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton rLinkButton21;
-        
-        /// <summary>
-        /// rTextBox82 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox rTextBox82;
-        
-        /// <summary>
-        /// rDropDownList22 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList rDropDownList22;
-        
-        /// <summary>
-        /// rTextBox83 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox rTextBox83;
-        
-        /// <summary>
-        /// rTextBox84 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox rTextBox84;
-        
-        /// <summary>
-        /// rtxtUPC control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox rtxtUPC;
-        
-        /// <summary>
-        /// rddlCategory control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList rddlCategory;
-        
-        /// <summary>
-        /// rtxtQuant control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox rtxtQuant;
-        
-        /// <summary>
-        /// rtxtPoint control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox rtxtPoint;
     }
 }
