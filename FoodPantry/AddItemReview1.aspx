@@ -1,8 +1,7 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/FoodPantry.Master" AutoEventWireup="true" CodeBehind="AddItemReview.aspx.cs" Inherits="FoodPantry.AddItemReview1" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/FoodPantry.Master" AutoEventWireup="true" CodeBehind="AddItemReview1.aspx.cs" Inherits="FoodPantry.AddItem2" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
     <script src="js/AddItem.js"></script>
         <div class="container">
         <div class="row header-container">
@@ -17,7 +16,7 @@
         <div class="container">
             
         <div class="row d-flex justify-content-between">
-            <button type="button" id="btnAddManual" class="addItemBtn btn btn-primary"  onclick="togglepanel(); return false; ">Add Item Manually</button>
+            <asp:Button ID="btnAddManual" runat="server" Text="Add Item Manually" CssClass="addItemBtn btn btn-primary" />
             <asp:Button ID="btnAddItem" runat="server" Text="Scan New Item" CssClass="addItemBtn btn btn-primary" />
             
         </div>
@@ -27,10 +26,9 @@
     <div class="container" id="botPortion">
         <div class="row d-flex justify-content-between">
             <asp:Button ID="btnSubmit" runat="server" Text="Submit Entry" CssClass="submitItemBtn btn btn-primary" />
-            <div class="row">
-                <asp:Label ID="lblTotalQuantDesc" runat="server" Text="Total Quantity: "></asp:Label><p id="totalQuant" style="font-weight:bold;margin-left:5px;">5</p>
-                
-                
+            <div>
+                <asp:Label ID="lblTotalQuantDesc" runat="server" Text="Total Quantity: "></asp:Label>
+                <asp:Label ID="lblTotalQuant" runat="server" Text="5" Font-Bold="True"></asp:Label>
             </div>
         </div>
     </div>
@@ -64,7 +62,7 @@
     
     <div class="containercontainer">
         <div class="container itemContainer">
-            <div id="panel" style="display:none;">
+            <asp:Panel ID="pnlmanual" runat="server">
              <div class="itemRow">
                 <div class="row d-flex additemrow justify-content-between">
                     <div class="rowItems">
@@ -88,13 +86,13 @@
                         <asp:TextBox ID="rTextBox84" runat="server" TextMode="Number" Width="80px" CssClass="text-center form-control borderControl"></asp:TextBox>
                     </div>
                     <div class="rowItems">
-                        <button type="button" id="removebtn" class="addItemBtn btn btn-primary"  onclick="removepanel(); return false; ">Remove</button>
+                        <asp:Button ID="rButton22" Text="Remove" runat="server" Class="btn btn-primary" />
                     </div>
                 </div>
             </div>
-            </div>
+            </asp:Panel>
 
-            <div id="panel2" >
+
             <div class="itemRow">
                 <div class="row d-flex additemrow justify-content-between">
                     <div class="rowItems">
@@ -118,16 +116,16 @@
                         <asp:TextBox ID="rtxtPoint" runat="server" TextMode="Number" Width="80px" CssClass="text-center form-control borderControl">1</asp:TextBox>
                     </div>
                     <div class="rowItems">
-                        <button type="button" id="removebtn2" class="addItemBtn btn btn-primary"  onclick="removepanel2(); return false; ">Remove</button>
+                        <asp:Button ID="rbtnRemove" Text="Remove" runat="server" Class="btn btn-primary" />
                     </div>
                 </div>
             </div>
-                </div>      
+                      
             
 
         </div>
         </div>
     <hr />
 
-
+    
 </asp:Content>

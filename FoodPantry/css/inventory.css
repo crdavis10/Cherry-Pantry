@@ -170,3 +170,7 @@ h5{
 #botPortion{
     margin-bottom:0px;
 }
+
+.noborder {
+    border:none !important;
+}

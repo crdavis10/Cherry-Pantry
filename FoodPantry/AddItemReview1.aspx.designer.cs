@@ -10,7 +10,16 @@
 namespace FoodPantry {
     
     
-    public partial class AddItemReview1 {
+    public partial class AddItem2 {
+        
+        /// <summary>
+        /// btnAddManual control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnAddManual;
         
         /// <summary>
         /// btnAddItem control.
@@ -38,6 +47,15 @@ namespace FoodPantry {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblTotalQuantDesc;
+        
+        /// <summary>
+        /// lblTotalQuant control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblTotalQuant;
         
         /// <summary>
         /// rLabel1 control.
@@ -94,6 +112,15 @@ namespace FoodPantry {
         protected global::System.Web.UI.WebControls.Label rLabel7;
         
         /// <summary>
+        /// pnlmanual control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel pnlmanual;
+        
+        /// <summary>
         /// rLinkButton21 control.
         /// </summary>
         /// <remarks>
@@ -139,6 +166,15 @@ namespace FoodPantry {
         protected global::System.Web.UI.WebControls.TextBox rTextBox84;
         
         /// <summary>
+        /// rButton22 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button rButton22;
+        
+        /// <summary>
         /// rbtnCamera control.
         /// </summary>
         /// <remarks>
@@ -182,5 +218,14 @@ namespace FoodPantry {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox rtxtPoint;
+        
+        /// <summary>
+        /// rbtnRemove control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button rbtnRemove;
     }
 }
