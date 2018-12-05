@@ -10,7 +10,7 @@
 namespace FoodPantry {
     
     
-    public partial class Scan {
+    public partial class ScanInventoryFound {
         
         /// <summary>
         /// btnComplete control.
@@ -74,15 +74,6 @@ namespace FoodPantry {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label rLabel7;
-        
-        /// <summary>
-        /// LinkButton21 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton21;
         
         /// <summary>
         /// rTextBox82 control.

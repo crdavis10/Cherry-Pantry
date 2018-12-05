@@ -1,5 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/FoodPantry.Master" AutoEventWireup="true" CodeBehind="ScanCheckout.aspx.cs" Inherits="FoodPantry.ScanCheckout" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <link rel="stylesheet" href="css/scan.css" />
+        <script src="js/AddItem.js"></script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
@@ -36,8 +38,8 @@
         </div>
         <div class="container">
             <div class="row d-flex justify-content-between " style="margin-bottom:15px;">
-                <button type="button" id="btnAddManual" class="addItemBtn btn btn-primary"  onclick="togglepanel(); return false; ">Next Item</button>
-                <asp:Button ID="btnComplete" runat="server" Text="Complete" Height="40px" Width="150px" CssClass="myBtn align-self-end btn btn-primary" PostBackUrl="~/AddItemReview.aspx"/>
+                <span></span>
+                <asp:Button ID="btnComplete" runat="server" Text="Complete" Height="40px" Width="150px" CssClass="myBtn align-self-end btn btn-primary" PostBackUrl="~/ShoppingCart.aspx"/>
             </div>
         </div>
         <div class="scanned_container">
@@ -105,7 +107,7 @@
             <div class="itemRow">
                 <div class="row d-flex additemrow justify-content-around">
                     <div class="rowItems">
-                        <a onclick="thumbnailclick(); return false;" style="cursor:pointer;"><span id="thumbnail_Place"><i id="cameraicon" class="fas fa-camera addItemImg" style="color:#a41e35;"></i></span></a>
+                        <a onclick="thumbnailclick(); return false;" style="cursor:pointer;"><span id="thumbnail_Place"><img src="images/scan item.jpg" style="width:30px;" /></span></a>
                     </div>
                     <div class="rowItems">
                         <asp:TextBox ID="rtxtUPC" runat="server" Width="150px" CssClass="text-center form-control borderControl noborder">07572048127</asp:TextBox>
@@ -119,7 +121,7 @@
                         </asp:DropDownList>
                     </div>
                     <div class="rowItems">
-                        <asp:TextBox ID="rtxtQuant" runat="server" TextMode="Number" Width="80px" CssClass="text-center form-control borderControl noborder">1</asp:TextBox>
+                        <asp:TextBox ID="rtxtQuant" runat="server" TextMode="Number" Width="80px" CssClass="text-center form-control borderControl">1</asp:TextBox>
                     </div>
                     <div class="rowItems">
                         <asp:TextBox ID="rtxtPoint" runat="server" TextMode="Number" Width="80px" CssClass="text-center form-control borderControl noborder">1</asp:TextBox>

@@ -85,6 +85,7 @@
     <Content Include="images\cherrypantrycherry.png" />
     <Content Include="images\scan item.jpg" />
     <Content Include="InventoryEmpty.aspx" />
+    <Content Include="InventoryNew.aspx" />
     <Content Include="js\AddItem.js" />
     <Content Include="Login.aspx" />
     <Content Include="LoginColin.aspx" />
@@ -109,6 +110,7 @@
     <Content Include="Roles.aspx" />
     <Content Include="Scan.aspx" />
     <Content Include="ScanCheckout.aspx" />
+    <Content Include="ScanInventoryFound.aspx" />
     <Content Include="ShoppingCart.aspx" />
     <Content Include="ShoppingCart2.aspx" />
     <Content Include="Web.config" />
@@ -177,6 +179,13 @@
     <Compile Include="Inventory.aspx.designer.cs">
       <DependentUpon>Inventory.aspx</DependentUpon>
     </Compile>
+    <Compile Include="InventoryNew.aspx.cs">
+      <DependentUpon>InventoryNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InventoryNew.aspx.designer.cs">
+      <DependentUpon>InventoryNew.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -219,6 +228,13 @@
     </Compile>
     <Compile Include="ScanCheckout.aspx.designer.cs">
       <DependentUpon>ScanCheckout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScanInventoryFound.aspx.cs">
+      <DependentUpon>ScanInventoryFound.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScanInventoryFound.aspx.designer.cs">
+      <DependentUpon>ScanInventoryFound.aspx</DependentUpon>
     </Compile>
     <Compile Include="ShoppingCart.aspx.cs">
       <DependentUpon>ShoppingCart.aspx</DependentUpon>

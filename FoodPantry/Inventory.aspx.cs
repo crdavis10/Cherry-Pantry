@@ -19,20 +19,7 @@ namespace FoodPantry
         {
             if (!IsPostBack)
             {
-                txtUpc.ReadOnly = false;
-                txtWeight.ReadOnly = false;
-                txtCategory.ReadOnly = false;
-                txtPoint.ReadOnly = false;
-                txtQuantity.ReadOnly = false;
 
-                txtUpc.Style[HtmlTextWriterStyle.BorderStyle] = "solid";
-                txtWeight.BorderStyle = BorderStyle.Solid;
-                txtCategory.BorderStyle = BorderStyle.Solid;
-                txtPoint.BorderStyle = BorderStyle.Solid;
-                txtQuantity.BorderStyle = BorderStyle.Solid;
-
-                txtUpc.Style[HtmlTextWriterStyle.BorderWidth] = "1";
-                txtUpc.Style[HtmlTextWriterStyle.BorderColor] = "Black";
             }
             
         }

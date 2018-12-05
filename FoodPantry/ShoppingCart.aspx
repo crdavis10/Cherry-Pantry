@@ -26,7 +26,7 @@
                     <th>&nbsp;</th>
                     <th>&nbsp;</th>
                     <th>
-                        <asp:Label ID="lblTotal" runat="server" Text="Total: 2"></asp:Label></th>
+                        <asp:Label ID="lblTotal" runat="server" Text="Total: 1"></asp:Label></th>
                     <th class="button-group checkout-buttons"><asp:Button ID="btnOverride" Text="Override" runat="server" Class="btn btn-primary" />
                         <asp:Button ID="btnCheckout" Text="Checkout" runat="server" Class="btn btn-primary" OnClick="btnCheckout_Click" /></th>
                 </tr>
@@ -41,10 +41,10 @@
             </thead>
             <tbody>
                 <tr>
-                    <td><asp:Image ID="img1" runat="server" ImageUrl="https://images-na.ssl-images-amazon.com/images/I/816vyeuuKzL._SY355_.jpg" Height="54" Width="54"/></td>
-                    <td><asp:Label ID="Label1" runat="server" Text="037600106252"></asp:Label></td>
-                    <td><asp:Label ID="Label2" runat="server" Text="Peanut Butter"></asp:Label></td>
-                    <td><asp:TextBox ID="txtQuantity" CssClass="form-control" runat="server" Text="2" Width="42px"></asp:TextBox></td>
+                    <td><asp:Image ID="img1" runat="server" Height="54" Width="54" ImageUrl="~/images/scan item.jpg" /></td>
+                    <td><asp:Label ID="Label1" runat="server" Text="07572048127"></asp:Label></td>
+                    <td><asp:Label ID="Label2" runat="server" Text="Beavage"></asp:Label></td>
+                    <td><asp:TextBox ID="txtQuantity" CssClass="form-control" runat="server" Text="1" Width="42px"></asp:TextBox></td>
                     <td><asp:Label ID="Label3" runat="server" Text="1"></asp:Label></td>
                     <td class="button-group">
                         <asp:Button ID="btnEdit" Text="Edit" runat="server" CssClass="btn btn-primary btnShoppingEdit" />

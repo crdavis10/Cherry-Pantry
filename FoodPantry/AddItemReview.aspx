@@ -26,12 +26,13 @@
 
     <div class="container" id="botPortion">
         <div class="row d-flex justify-content-between">
-            <asp:Button ID="btnSubmit" runat="server" Text="Submit Entry" CssClass="submitItemBtn btn btn-primary" PostBackUrl="Inventory.aspx" />
             <div class="row">
                 <asp:Label ID="lblTotalQuantDesc" runat="server" Text="Total Quantity: "></asp:Label><p id="totalQuant" style="font-weight:bold;margin-left:5px;">5</p>
                 
                 
             </div>
+                        <asp:Button ID="btnSubmit" runat="server" Text="Submit Entry" CssClass="submitItemBtn btn btn-primary" PostBackUrl="InventoryNew.aspx" />
+
         </div>
     </div>
     <hr />

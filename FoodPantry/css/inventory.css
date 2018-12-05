@@ -29,7 +29,7 @@ h5{
 }
 /*                                view inventroy                                   */
 .invImg{
-    max-width:100px;
+    max-width:60px;
 }
 
 .lblDiv{
@@ -60,6 +60,8 @@ h5{
 
 .itemText{
     border:none;
+    width:8em;
+    overflow:auto;
 }
 
 
