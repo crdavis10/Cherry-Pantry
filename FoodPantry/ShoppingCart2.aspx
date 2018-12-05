@@ -26,7 +26,7 @@
                     <th>&nbsp;</th>
                     <th>&nbsp;</th>
                     <th>
-                        <asp:Label ID="lblTotal" runat="server" Text="Total: 0"></asp:Label></th>
+                        <asp:Label ID="lblTotal" runat="server" Text="Total Points: 0"></asp:Label></th>
                     <th class="button-group checkout-buttons"><asp:Button ID="btnOverride" Text="Override" runat="server" Class="btn btn-primary" />
                         <asp:Button ID="btnCheckout" Text="Checkout" runat="server" Class="btn btn-primary" /></th>
                 </tr>
