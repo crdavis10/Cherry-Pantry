@@ -123,9 +123,9 @@
                     </td>
                     <td id="cellUpdate" runat="server">12/5/2018</td>
                     <td>Beverage</td>
-                    <td>5</td>
                     <td>1</td>
-                    <td>5</td>
+                    <td>1</td>
+                    <td>1</td>
                     <td>
                         <button type="button" id="btnShowDetails" class="btn btn-primary" value="Show Details" onclick="showRDetails(); return false;">Show Details</button> 
                     </td>

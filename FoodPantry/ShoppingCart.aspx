@@ -43,7 +43,7 @@
                 <tr>
                     <td><asp:Image ID="img1" runat="server" Height="54" Width="54" ImageUrl="~/images/scan item.jpg" /></td>
                     <td><asp:Label ID="Label1" runat="server" Text="07572048127"></asp:Label></td>
-                    <td><asp:Label ID="Label2" runat="server" Text="Beavage"></asp:Label></td>
+                    <td><asp:Label ID="Label2" runat="server" Text="Beverage"></asp:Label></td>
                     <td><asp:TextBox ID="txtQuantity" CssClass="form-control" runat="server" Text="1" Width="42px"></asp:TextBox></td>
                     <td><asp:Label ID="Label3" runat="server" Text="1"></asp:Label></td>
                     <td class="button-group">
