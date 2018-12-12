@@ -82,6 +82,11 @@
                         <asp:Label ID="Label22" runat="server" Text="Point: "></asp:Label>
                         <asp:TextBox ID="TextBox20" runat="server" CssClass="itemText" ReadOnly="True">1</asp:TextBox>
                     </div>
+
+                    <div class="row d-flex justify-content-between itemRow">
+                        <asp:Label ID="Label215" runat="server" Text="Item Weight: "></asp:Label>
+                        <asp:TextBox ID="TextBox232" runat="server" CssClass="itemText" ReadOnly="True">16.9 oz</asp:TextBox>
+                    </div>
                 </div>
             </div>
             <div class="col-auto align-self-center">
@@ -107,23 +112,29 @@
                         <asp:Label ID="lblDesc" runat="server" Text="Category: "></asp:Label>
                         <asp:TextBox ID="txtCategory" runat="server"  CssClass="itemText" ReadOnly="True">Peanut Butter</asp:TextBox>
                     </div>
-  
                 </div>
             </div>
             <div class="col-auto">
                 <div class="col lblDiv">
-
+                   
                     <div class="row d-flex justify-content-between itemRow">
-                        <asp:Label ID="Label19" runat="server" Text="Quantity: "></asp:Label>
-                        <asp:TextBox ID="TextBox17" runat="server" CssClass="itemText" ReadOnly="True">30</asp:TextBox>
+                        <asp:Label ID="Label14" runat="server" Text="Quantity: "></asp:Label>
+                        <asp:TextBox ID="TextBox14" runat="server" CssClass="itemText" ReadOnly="True">15</asp:TextBox>
                     </div>
 
                     <div class="row d-flex justify-content-between itemRow">
-                        <asp:Label ID="Label20" runat="server" Text="Point: "></asp:Label>
-                        <asp:TextBox ID="TextBox18" runat="server" CssClass="itemText" ReadOnly="True">2</asp:TextBox>
+                        <asp:Label ID="Label18" runat="server" Text="Point: "></asp:Label>
+                        <asp:TextBox ID="TextBox16" runat="server" CssClass="itemText" ReadOnly="True">1</asp:TextBox>
                     </div>
+
+                    <div class="row d-flex justify-content-between itemRow">
+                        <asp:Label ID="Label3" runat="server" Text="Item Weight: "></asp:Label>
+                        <asp:TextBox ID="TextBox3" runat="server" CssClass="itemText" ReadOnly="True">40 oz</asp:TextBox>
+                    </div>
+
                 </div>
             </div>
+            
             <div class="col-auto align-self-center">
                 <asp:Button ID="btnEdit" runat="server" Text="Edit" CssClass="editItemBtn myBtn btn btn-primary" />
             </div>
@@ -146,20 +157,25 @@
                         <asp:Label ID="Label2" runat="server" Text="Category: "></asp:Label>
                         <asp:TextBox ID="TextBox2" runat="server" CssClass="itemText" ReadOnly="True">Coffee</asp:TextBox>
                     </div>
-                   
+                    
                 </div>
             </div>
             <div class="col-auto">
                 <div class="col lblDiv">
-                  
+
                     <div class="row d-flex justify-content-between itemRow">
-                        <asp:Label ID="Label23" runat="server" Text="Quantity: "></asp:Label>
-                        <asp:TextBox ID="TextBox21" runat="server" CssClass="itemText" ReadOnly="True">5</asp:TextBox>
+                        <asp:Label ID="Label19" runat="server" Text="Quantity: "></asp:Label>
+                        <asp:TextBox ID="TextBox17" runat="server" CssClass="itemText" ReadOnly="True">5</asp:TextBox>
                     </div>
 
                     <div class="row d-flex justify-content-between itemRow">
-                        <asp:Label ID="Label24" runat="server" Text="Point: "></asp:Label>
-                        <asp:TextBox ID="TextBox22" runat="server" CssClass="itemText" ReadOnly="True">3</asp:TextBox>
+                        <asp:Label ID="Label20" runat="server" Text="Point: "></asp:Label>
+                        <asp:TextBox ID="TextBox18" runat="server" CssClass="itemText" ReadOnly="True">2</asp:TextBox>
+                    </div>
+
+                    <div class="row d-flex justify-content-between itemRow">
+                        <asp:Label ID="Label5" runat="server" Text="Item Weight: "></asp:Label>
+                        <asp:TextBox ID="TextBox5" runat="server" CssClass="itemText" ReadOnly="True">12 oz</asp:TextBox>
                     </div>
                 </div>
             </div>
@@ -185,20 +201,25 @@
                         <asp:Label ID="Label7" runat="server" Text="Category: "></asp:Label>
                         <asp:TextBox ID="TextBox7" runat="server" CssClass="itemText" ReadOnly="True">Pastry</asp:TextBox>
                     </div>
-            
+                    
                 </div>
             </div>
-            <div class="col-auto">
+             <div class="col-auto">
                 <div class="col lblDiv">
-               
+    
                     <div class="row d-flex justify-content-between itemRow">
-                        <asp:Label ID="Label14" runat="server" Text="Quantity: "></asp:Label>
-                        <asp:TextBox ID="TextBox14" runat="server" CssClass="itemText" ReadOnly="True">31</asp:TextBox>
+                        <asp:Label ID="Label8" runat="server" Text="Quantity: "></asp:Label>
+                        <asp:TextBox ID="TextBox8" runat="server" CssClass="itemText" ReadOnly="True">31</asp:TextBox>
                     </div>
 
                     <div class="row d-flex justify-content-between itemRow">
-                        <asp:Label ID="Label18" runat="server" Text="Point: "></asp:Label>
-                        <asp:TextBox ID="TextBox16" runat="server" CssClass="itemText" ReadOnly="True">1</asp:TextBox>
+                        <asp:Label ID="Label10" runat="server" Text="Point: "></asp:Label>
+                        <asp:TextBox ID="TextBox10" runat="server" CssClass="itemText" ReadOnly="True">1</asp:TextBox>
+                    </div>
+
+                    <div class="row d-flex justify-content-between itemRow">
+                        <asp:Label ID="Label13" runat="server" Text="Item Weight: "></asp:Label>
+                        <asp:TextBox ID="TextBox13" runat="server" CssClass="itemText" ReadOnly="True">1.3 oz</asp:TextBox>
                     </div>
                 </div>
             </div>
@@ -224,20 +245,26 @@
                         <asp:Label ID="Label12" runat="server" Text="Category: "></asp:Label>
                         <asp:TextBox ID="TextBox12" runat="server" CssClass="itemText" ReadOnly="True">Beverage</asp:TextBox>
                     </div>
-             
+ 
+
                 </div>
             </div>
             <div class="col-auto">
                 <div class="col lblDiv">
-              
+  
                     <div class="row d-flex justify-content-between itemRow">
-                        <asp:Label ID="Label8" runat="server" Text="Quantity: "></asp:Label>
-                        <asp:TextBox ID="TextBox8" runat="server" CssClass="itemText" ReadOnly="True">12</asp:TextBox>
+                        <asp:Label ID="Label15" runat="server" Text="Quantity: "></asp:Label>
+                        <asp:TextBox ID="TextBox15" runat="server" CssClass="itemText" ReadOnly="True">12</asp:TextBox>
                     </div>
     
                     <div class="row d-flex justify-content-between itemRow">
-                        <asp:Label ID="Label10" runat="server" Text="Point: "></asp:Label>
-                        <asp:TextBox ID="TextBox10" runat="server" CssClass="itemText" ReadOnly="True">2</asp:TextBox>
+                        <asp:Label ID="Label23" runat="server" Text="Point: "></asp:Label>
+                        <asp:TextBox ID="TextBox21" runat="server" CssClass="itemText" ReadOnly="True">1</asp:TextBox>
+                    </div>
+
+                    <div class="row d-flex justify-content-between itemRow">
+                        <asp:Label ID="Label24" runat="server" Text="Item Weight: "></asp:Label>
+                        <asp:TextBox ID="TextBox22" runat="server" CssClass="itemText" ReadOnly="True">20 oz</asp:TextBox>
                     </div>
                 </div>
             </div>
@@ -247,6 +274,7 @@
         </div>
         <hr />
     </div>
+
 
     <div class="container botNav">
         <nav >

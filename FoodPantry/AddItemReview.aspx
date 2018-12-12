@@ -75,10 +75,10 @@
                         <asp:LinkButton runat="server" ID="rLinkButton21" Text="<i class='fas fa-camera addItemImg'></i>" CssClass="" />
                     </div>
                     <div class="rowItems">
-                        <asp:TextBox ID="rTextBox82" runat="server" Width="150px" CssClass="text-center form-control borderControl"></asp:TextBox>
+                        <asp:TextBox ID="rTextBox82" runat="server" Width="130px" CssClass="text-center form-control borderControl"></asp:TextBox>
                     </div>
                     <div class="rowItems">
-                        <asp:DropDownList ID="rDropDownList22" runat="server" CssClass="ddDesc form-control text-center">
+                        <asp:DropDownList ID="rDropDownList22" runat="server" CssClass="ddDesc form-control text-center" Width="150px">
                             <asp:ListItem>Select Category</asp:ListItem><asp:ListItem>Peanut Butter</asp:ListItem>
                             <asp:ListItem>Coffee</asp:ListItem>
                             <asp:ListItem>Pastry</asp:ListItem>
@@ -90,6 +90,9 @@
                     </div>
                     <div class="rowItems">
                         <asp:TextBox ID="rTextBox84" runat="server" TextMode="Number" Width="80px" CssClass="text-center form-control borderControl"></asp:TextBox>
+                    </div>
+                    <div class="rowItems">
+                        <asp:TextBox ID="TextBox2" runat="server"  Width="80px" CssClass="text-center form-control borderControl"></asp:TextBox>
                     </div>
                     <div class="rowItems">
                         <button type="button" id="removebtn" class="addItemBtn btn btn-primary"  onclick="removepanel(); return false; ">Remove</button>

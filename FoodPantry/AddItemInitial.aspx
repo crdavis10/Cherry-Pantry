@@ -55,6 +55,9 @@
                         <asp:Label ID="rLabel5" runat="server" Text="Points" Width="80px"></asp:Label>
                     </div>
                     <div class="rowItems">
+                        <asp:Label ID="rLabel16" runat="server" Text="Weight" Width="80px"></asp:Label>
+                    </div>
+                    <div class="rowItems">
                         <asp:Label ID="rLabel7" runat="server" Text="Remove" Width="80px"></asp:Label>
                     </div>
                    
