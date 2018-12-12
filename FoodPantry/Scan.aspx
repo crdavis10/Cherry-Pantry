@@ -61,6 +61,9 @@
                         <asp:Label ID="rLabel5" runat="server" Text="Points" Width="80px"></asp:Label>
                     </div>
                     <div class="rowItems">
+                        <asp:Label ID="rLabel100" runat="server" Text="Weight" Width="80px"></asp:Label>
+                    </div>
+                    <div class="rowItems">
                         <asp:Label ID="rLabel7" runat="server" Text="Remove" Width="80px"></asp:Label>
                     </div>
                    
@@ -95,6 +98,9 @@
                         <asp:TextBox ID="rTextBox84" runat="server" TextMode="Number" Width="80px" CssClass="text-center form-control borderControl"></asp:TextBox>
                     </div>
                     <div class="rowItems">
+                        <asp:TextBox ID="rTextBox100" runat="server" TextMode="Number" Width="80px" CssClass="text-center form-control borderControl"></asp:TextBox>
+                    </div>
+                    <div class="rowItems">
                         <button type="button" id="removebtn" class="addItemBtn btn btn-primary"  onclick="removepanel(); return false; ">Remove</button>
                     </div>
                 </div>
@@ -124,6 +130,9 @@
                     </div>
                     <div class="rowItems">
                         <asp:TextBox ID="rtxtPoint" runat="server" TextMode="Number" Width="80px" CssClass="text-center form-control borderControl"></asp:TextBox>
+                    </div>
+                    <div class="rowItems">
+                        <asp:TextBox ID="TextBox111" runat="server" TextMode="Number" Width="80px" CssClass="text-center form-control borderControl"></asp:TextBox>
                     </div>
                     <div class="rowItems">
                         <button type="button" id="removebtn2" class="addItemBtn btn btn-primary"  onclick="removepanel2(); return false; ">Remove</button>

@@ -67,6 +67,15 @@ namespace FoodPantry {
         protected global::System.Web.UI.WebControls.Label rLabel5;
         
         /// <summary>
+        /// rLabel100 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label rLabel100;
+        
+        /// <summary>
         /// rLabel7 control.
         /// </summary>
         /// <remarks>
@@ -121,6 +130,15 @@ namespace FoodPantry {
         protected global::System.Web.UI.WebControls.TextBox rTextBox84;
         
         /// <summary>
+        /// rTextBox100 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox rTextBox100;
+        
+        /// <summary>
         /// rtxtUPC control.
         /// </summary>
         /// <remarks>
@@ -155,5 +173,14 @@ namespace FoodPantry {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox rtxtPoint;
+        
+        /// <summary>
+        /// TextBox111 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBox111;
     }
 }

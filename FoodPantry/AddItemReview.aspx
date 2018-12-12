@@ -56,6 +56,9 @@
                         <asp:Label ID="rLabel5" runat="server" Text="Points" Width="80px"></asp:Label>
                     </div>
                     <div class="rowItems">
+                        <asp:Label ID="Label1" runat="server" Text="Weight" Width="80px"></asp:Label>
+                    </div>
+                    <div class="rowItems">
                         <asp:Label ID="rLabel7" runat="server" Text="Remove" Width="80px"></asp:Label>
                     </div>
                    
@@ -102,7 +105,7 @@
                         <img src="images/scan item.jpg" class="thumb" style="width:30px;"/>
                     </div>
                     <div class="rowItems">
-                        <asp:TextBox ID="rtxtUPC" runat="server" Width="150px" CssClass="text-center form-control borderControl noborder">07572048127</asp:TextBox>
+                        <asp:TextBox ID="rtxtUPC" runat="server" Width="130px" CssClass="text-center form-control borderControl noborder">07572048127</asp:TextBox>
                     </div>
                     <div class="rowItems">
                         <asp:DropDownList ID="rddlCategory" runat="server" CssClass="ddDesc form-control text-center">
@@ -117,6 +120,9 @@
                     </div>
                     <div class="rowItems">
                         <asp:TextBox ID="rtxtPoint" runat="server" TextMode="Number" Width="80px" CssClass="text-center form-control borderControl">1</asp:TextBox>
+                    </div>
+                    <div class="rowItems">
+                        <asp:TextBox ID="TextBox1" runat="server"  Width="80px" CssClass="text-center form-control borderControl">16.9 oz</asp:TextBox>
                     </div>
                     <div class="rowItems">
                         <button type="button" id="removebtn2" class="addItemBtn btn btn-primary"  onclick="removepanel2(); return false; ">Remove</button>
